@@ -4,12 +4,12 @@ import React from "react";
 const Footer = () => {
   return (
     <footer
-      className="lg:flex lg:items-center lg:justify-between relative z-30 lg:py-8 lg:px-12 border-2 border-complimentary
+      className="lg:flex lg:items-center lg:justify-between relative z-30 lg:py-8 lg:px-12
       flex-row py-4"
     >
       <div className="flex-row">
-        <h3 className="text-center italic font-semibold pb-2">Powered By</h3>
-        <a href="https://" target="_blank" rel="noopener noreferrer">
+        <h3 className="text-center italic font-semibold pb-1">Powered By</h3>
+        <a href="https://busisoft.in" target="_blank">
           <Image
             src="/Busisoft.png"
             width={160}

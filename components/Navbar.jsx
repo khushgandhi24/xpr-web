@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="relative z-30 py-8 border-2 border-primary px-12 flex items-center justify-between">
+    <nav className="relative z-30 py-8 border-b-2 border-primary px-12 flex items-center justify-between">
       <Link href="/">
         <Image
           className="cursor-pointer"
@@ -17,7 +17,7 @@ const Navbar = () => {
         />
       </Link>
       <ul className="hidden h-full gap-12 lg:flex items-center">
-        <Link href="/modules">Modules</Link>
+        <Link href="/module">Modules</Link>
         <Link href="/about">About</Link>
         <Link href="/news">News</Link>
         <a href="https://www.xpresion.in/contact.html">Contact</a>
