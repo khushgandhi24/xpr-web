@@ -17,14 +17,19 @@ const Card = () => {
 
 const QuickOverview = () => {
   return (
-    <div className="flex py-12 px-8 border-y-2 border-outline bg-surface items-center justify-around">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </div>
+    <>
+      <h1 className="text-2xl text-center font-bold text-onSurface pt-4">
+        Explore Xpresion's Modules
+      </h1>
+      <div className="flex flex-col gap-8 py-12 px-8 border-b-2 border-outline bg-surface items-center lg:justify-around lg:flex-row">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </>
   );
 };
 

@@ -1,35 +1,82 @@
 "use client";
 
-import React from "react";
-import "@reactuiutils/horizontal-timeline/timeline.css";
-import {
-  Action,
-  Event,
-  Subtitle,
-  Timeline,
-  Title,
-} from "@reactuiutils/horizontal-timeline";
+import dynamic from "next/dynamic";
+const Chrono = dynamic(() => import("react-chrono").then((mod) => mod.Chrono), {
+  ssr: false,
+});
 
 function About() {
+  const items = [
+    {
+      title: "May 1940",
+      cardTitle: "Event 1",
+      cardSubtitle: "This is the subtitle for event 1",
+      cardDetailedText: "This is a detailed text for event 1.",
+    },
+    {
+      title: "June 1940",
+      cardTitle: "Event 2",
+      cardSubtitle: "This is the subtitle for event 2",
+      cardDetailedText: "This is a detailed text for event 2.",
+    },
+    {
+      title: "July 1940",
+      cardTitle: "Event 3",
+      cardSubtitle: "This is the subtitle for event 3",
+      cardDetailedText: "This is a detailed text for event 3.",
+    },
+    {
+      title: "July 1940",
+      cardTitle: "Event 3",
+      cardSubtitle: "This is the subtitle for event 3",
+      cardDetailedText: "This is a detailed text for event 3.",
+    },
+  ];
+
   return (
-    <section>
-      <Timeline className="hidden lg:flex" minEvents={6}>
-        {/* Without action */}
-        <Event color="#87a2c7">
-          <Title>Agendado</Title>
-          <Subtitle>26/03/2019 09:51</Subtitle>
-        </Event>
-
-        {/* With action */}
-        <Event color="red">
-          <Title>Erro</Title>
-          <Subtitle>26/03/2019 09:51</Subtitle>
-          <Action onClick={() => alert("clicou")}>Detalhes</Action>
-        </Event>
-
-        {/* Without title, subtitle and action */}
-        <Event color="darkGreen" />
-      </Timeline>
+    <section className="border-b-2 border-primary">
+      <h1 className="text-3xl text-onSurface text-center my-4 font-bold">
+        Our Journey
+      </h1>
+      <div className="w-full h-[600x] px-12 py-4 hidden lg:flex">
+        <Chrono
+          items={items}
+          cardWidth={600}
+          cardHeight={400}
+          mode="HORIZONTAL"
+          disableToolbar={true}
+          //nestedCardHeight
+          //showAllCardsHorizontal={true}
+          theme={{
+            primary: "#385Ca9",
+            secondary: "#8A7921",
+            cardBgColor: "#D9E2FF",
+            cardForeColor: "#001849",
+            titleColor: "black",
+            titleColorActive: "#f0f0f0",
+          }}
+        />
+      </div>
+      <div className="w-full h-full px-12 py-4 lg:hidden">
+        <Chrono
+          items={items}
+          mode="VERTICAL"
+          disableToolbar={true}
+          //nestedCardHeight
+          //showAllCardsHorizontal={true}
+          theme={{
+            primary: "#385Ca9",
+            secondary: "#8A7921",
+            cardBgColor: "#D9E2FF",
+            cardForeColor: "#001849",
+          }}
+        >
+          <div className="chrono-icons">
+            <img src="menu.svg" alt="image1" />
+            <img src="menu.svg" alt="image2" />
+          </div>
+        </Chrono>
+      </div>
     </section>
   );
 }
