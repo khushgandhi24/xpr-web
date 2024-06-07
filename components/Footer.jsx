@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer
-      className="lg:flex lg:items-center lg:justify-between relative z-30 lg:py-8 lg:px-12 border-t-4 border-primary bg-primaryContainer
+      className="lg:flex lg:items-center lg:flex-row lg:justify-between relative z-30 lg:py-8 lg:px-12 border-t-4 border-primary bg-primaryContainer
       flex flex-col py-4 gap-4"
     >
       <div className="flex-row">
@@ -19,7 +19,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="lg:flex gap-4 font-semibold text-center flex flex-col">
+      <div className="lg:flex lg:flex-row gap-4 font-semibold text-center text-lg flex flex-col">
         <h3>Email: info@busisoft.in</h3>
         <h3>Phone: +919998979695</h3>
       </div>

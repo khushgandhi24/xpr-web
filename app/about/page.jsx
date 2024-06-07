@@ -1,80 +1,67 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { Items } from "@/public/constants";
 const Chrono = dynamic(() => import("react-chrono").then((mod) => mod.Chrono), {
   ssr: false,
 });
 
 function About() {
-  const items = [
-    {
-      title: "May 1940",
-      cardTitle: "Event 1",
-      cardSubtitle: "This is the subtitle for event 1",
-      cardDetailedText: "This is a detailed text for event 1.",
-    },
-    {
-      title: "June 1940",
-      cardTitle: "Event 2",
-      cardSubtitle: "This is the subtitle for event 2",
-      cardDetailedText: "This is a detailed text for event 2.",
-    },
-    {
-      title: "July 1940",
-      cardTitle: "Event 3",
-      cardSubtitle: "This is the subtitle for event 3",
-      cardDetailedText: "This is a detailed text for event 3.",
-    },
-    {
-      title: "July 1940",
-      cardTitle: "Event 3",
-      cardSubtitle: "This is the subtitle for event 3",
-      cardDetailedText: "This is a detailed text for event 3.",
-    },
-  ];
-
   return (
-    <section className="border-b-2 border-primary">
-      <h1 className="text-3xl text-onSurface text-center my-4 font-bold">
+    <section className="border-b-2 pt-6 border-primary">
+      <h1 className="text-3xl text-onSurface text-center my-4 font-semibold italic lg:not-italic">
         Our Journey
       </h1>
-      <div className="w-full h-[600x] px-12 py-4 hidden lg:flex">
+      <div className="w-full h-[600x] py-4 px-12 hidden lg:flex">
         <Chrono
-          items={items}
-          cardWidth={600}
+          items={Items}
+          itemWidth={500}
+          cardWidth={900}
           cardHeight={400}
           mode="HORIZONTAL"
           disableToolbar={true}
-          //nestedCardHeight
-          //showAllCardsHorizontal={true}
+          fontSizes={{
+            cardSubtitle: "1rem",
+            cardText: "1rem",
+            cardTitle: "1.2rem",
+            title: "1.25rem",
+          }}
           theme={{
             primary: "#385Ca9",
-            secondary: "#8A7921",
+            secondary: "#D9E2FF",
             cardBgColor: "#D9E2FF",
-            cardForeColor: "#001849",
-            titleColor: "black",
-            titleColorActive: "#f0f0f0",
+            cardTitleColor: "#001849",
+            cardDetailsColor: "#001849",
+            cardSubtitleColor: "#ba1a1a",
+            titleColor: "grey",
+            titleColorActive: "#001849",
           }}
         />
       </div>
-      <div className="w-full h-full px-12 py-4 lg:hidden">
+      <div className="w-full h-full px-2 py-4 lg:hidden">
         <Chrono
-          items={items}
+          items={Items}
           mode="VERTICAL"
           disableToolbar={true}
           //nestedCardHeight
           //showAllCardsHorizontal={true}
           theme={{
             primary: "#385Ca9",
-            secondary: "#8A7921",
+            secondary: "#D9E2FF",
             cardBgColor: "#D9E2FF",
-            cardForeColor: "#001849",
+            cardTitleColor: "#001849",
+            cardDetailsColor: "#001849",
+            cardSubtitleColor: "#ba1a1a",
+            titleColor: "grey",
+            titleColorActive: "#001849",
           }}
         >
-          <div className="chrono-icons">
-            <img src="menu.svg" alt="image1" />
-            <img src="menu.svg" alt="image2" />
-          </div>
+          {/* <div className="chrono-icons">
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/marker.png"
+              alt="marker"
+            />
+          </div> */}
         </Chrono>
       </div>
     </section>

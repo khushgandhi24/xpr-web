@@ -1,8 +1,6 @@
-import React from "react";
-
 function Article({ hero, author, role, title, short, link }) {
   return (
-    <div>
+    <div className="w-[340px] ml-3 mr-[0.75rem] lg:w-auto lg:mx-0">
       <div className="relative">
         <img
           className="object-cover object-center w-full h-64 rounded-lg lg:h-80"
@@ -32,7 +30,7 @@ function Article({ hero, author, role, title, short, link }) {
 
       <hr className="w-32 my-6 text-blue-500" />
 
-      <p className="text-sm text-gray-500 dark:text-gray-400">{short}</p>
+      <p className="text-sm text-gray-500">{short}</p>
 
       <a
         href={link}

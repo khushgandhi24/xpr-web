@@ -11,8 +11,8 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@motionone/utils": "^10.18.0",
     "@mui/material": "^5.15.19",
-    "@reactuiutils/horizontal-timeline": "^1.0.4",
     "framer-motion": "^11.2.10",
     "next": "14.2.3",
     "react": "^18",

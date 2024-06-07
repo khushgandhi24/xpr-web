@@ -1,81 +1,96 @@
+"use client";
+
 import Article from "@/components/Article";
+import ParallaxText from "@/components/ParallaxText";
+import { Articles } from "@/public/constants";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 function News() {
+  const ref = useRef(null);
+
+  const handleHorizantalScroll = (element, speed, distance, step) => {
+    let scrollAmount = 0;
+    const slideTimer = setInterval(() => {
+      element.scrollLeft += step;
+      scrollAmount += Math.abs(step);
+      if (scrollAmount >= distance) {
+        clearInterval(slideTimer);
+      }
+    }, speed);
+  };
+
   return (
-    <section class="bg-white dark:bg-gray-900">
-      <div class="container px-6 py-10 mx-auto">
-        <div class="text-center">
-          <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
-            From the blog
+    <section className="bg-white dark:bg-gray-900">
+      <div className="container px-6 py-10 mx-auto">
+        <div className="text-center">
+          <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
+            <span className="italic lg:hidden">
+              <ParallaxText baseVelocity={5}>From the blog</ParallaxText>
+            </span>
+            <span className="hidden lg:block">From the blog</span>
           </h1>
 
-          <p class="max-w-lg mx-auto mt-4 text-gray-500">
+          <p className="max-w-lg mx-auto mt-4 text-gray-500">
             Expert Opinions and Insights on the latest trends in Logistics and
             Express Industries
           </p>
         </div>
 
-        <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
-          <Article
-            hero={
-              "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-            }
-            author={"Busisoft"}
-            role={"Social Media Lead"}
-            title={"How Xpresion disrupted the Express Industry"}
-            short={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet dolores praesentium, alias nam? Tempore"
-            }
-            link={"https://www.linkedin.com/"}
-          />
-          <Article
-            hero={
-              "https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-            }
-            author={"Busisoft"}
-            role={"Social Media Lead"}
-            title={"How Xpresion disrupted the Express Industry"}
-            short={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet dolores praesentium, alias nam? Tempore"
-            }
-            link={"https://www.linkedin.com/"}
-          />
-          <Article
-            hero={
-              "https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-            }
-            author={"Busisoft"}
-            role={"Social Media Lead"}
-            title={"How Xpresion disrupted the Express Industry"}
-            short={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet dolores praesentium, alias nam? Tempore"
-            }
-            link={"https://www.linkedin.com/"}
-          />
-          <Article
-            hero={
-              "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-            }
-            author={"Busisoft"}
-            role={"Social Media Lead"}
-            title={"How Xpresion disrupted the Express Industry"}
-            short={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet dolores praesentium, alias nam? Tempore"
-            }
-            link={"https://www.linkedin.com/"}
-          />
-          <Article
-            hero={
-              "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-            }
-            author={"Busisoft"}
-            role={"Social Media Lead"}
-            title={"How Xpresion disrupted the Express Industry"}
-            short={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet dolores praesentium, alias nam? Tempore"
-            }
-            link={"https://www.linkedin.com/"}
-          />
+        <div className="hidden lg:grid lg:grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
+          {Articles.map((article) => {
+            return (
+              <Article
+                key={article.id}
+                title={article.title}
+                author={article.author}
+                hero={article.img}
+                link={article.link}
+                short={article.short}
+                role={article.role}
+              />
+            );
+          })}
+        </div>
+        <div className="mt-8 lg:hidden">
+          <>
+            <motion.div
+              whileTap={{ scale: 1.5 }}
+              className="absolute top-[50%] left-2 text-3xl font-bold cursor-pointer"
+              onClick={() => {
+                handleHorizantalScroll(ref.current, 100, 400, -400);
+              }}
+            >
+              &lt;
+            </motion.div>
+            <div
+              className="flex flex-row flex-nowrap overflow-x-scroll no-scrollbar scroll-smooth snap-x snap-mandatory"
+              ref={ref}
+            >
+              {Articles.map((article) => (
+                <div key={article.id} className="snap-center basis-full">
+                  <Article
+                    key={article.id}
+                    title={article.title}
+                    author={article.author}
+                    hero={article.img}
+                    short={article.short}
+                    link={article.link}
+                    role={article.role}
+                  />
+                </div>
+              ))}
+            </div>
+            <motion.div
+              whileTap={{ scale: 1.5 }}
+              className="absolute top-[50%] left-[93%] text-3xl font-bold cursor-pointer"
+              onClick={() => {
+                handleHorizantalScroll(ref.current, 100, 400, 400);
+              }}
+            >
+              &gt;
+            </motion.div>
+          </>
         </div>
       </div>
     </section>
