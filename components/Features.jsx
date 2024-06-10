@@ -48,7 +48,7 @@ const Features = () => {
           <>
             <motion.div
               whileTap={{ scale: 1.5 }}
-              className="absolute top-[85%] left-2 text-3xl font-bold cursor-pointer"
+              className="absolute top-[85%] left-2 text-2xl font-bold cursor-pointer"
               onClick={() => {
                 handleHorizantalScroll(ref.current, 100, 400, -400);
               }}
@@ -71,7 +71,7 @@ const Features = () => {
             </div>
             <motion.div
               whileTap={{ scale: 1.5 }}
-              className="absolute top-[85%] left-[93%] text-3xl font-bold cursor-pointer"
+              className="absolute top-[85%] left-[93%] text-2xl font-bold cursor-pointer"
               onClick={() => {
                 handleHorizantalScroll(ref.current, 100, 400, 400);
               }}

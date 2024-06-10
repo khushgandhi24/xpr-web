@@ -21,7 +21,7 @@ function News() {
   };
 
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white">
       <div className="container px-6 py-10 mx-auto">
         <div className="text-center">
           <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
@@ -56,7 +56,7 @@ function News() {
           <>
             <motion.div
               whileTap={{ scale: 1.5 }}
-              className="absolute top-[50%] left-2 text-3xl font-bold cursor-pointer"
+              className="absolute top-[50%] left-2 text-2xl font-bold cursor-pointer"
               onClick={() => {
                 handleHorizantalScroll(ref.current, 100, 400, -400);
               }}
@@ -83,7 +83,7 @@ function News() {
             </div>
             <motion.div
               whileTap={{ scale: 1.5 }}
-              className="absolute top-[50%] left-[93%] text-3xl font-bold cursor-pointer"
+              className="absolute top-[50%] left-[93%] text-2xl font-bold cursor-pointer"
               onClick={() => {
                 handleHorizantalScroll(ref.current, 100, 400, 400);
               }}
