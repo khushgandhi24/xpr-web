@@ -8,10 +8,10 @@ function Module() {
       <h1 className="text-3xl text-center font-semibold italic lg:not-italic text-onSurface py-4">
         <span className="lg:hidden">
           <ParallaxText baseVelocity={5}>
-            Explore Xpresion's Modules
+            Explore Xpresion&apos;s Modules
           </ParallaxText>
         </span>
-        <span className="hidden lg:block">Explore Xpresion's Modules</span>
+        <span className="hidden lg:block">Explore Xpresion&apos;s Modules</span>
       </h1>
       <div className="hidden lg:block">
         <QuickOverview />
