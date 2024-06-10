@@ -10,8 +10,8 @@ const ScrollSlider = ({ modules, renderComponent }) => {
     let scrollAmount = 0;
     const slideTimer = setInterval(() => {
       element.scrollLeft += step;
-      console.log(element.scrollLeft);
       scrollAmount += Math.abs(step);
+      console.log(element.scrollLeft, scrollAmount);
       if (scrollAmount >= distance) {
         clearInterval(slideTimer);
       }
@@ -39,7 +39,7 @@ const ScrollSlider = ({ modules, renderComponent }) => {
             className="py-6 px-[5.5rem] bg-surface snap-center snap-always basis-full"
           >
             {renderComponent(module)}
-            <p className="pt-8">{module.desc}</p>
+            <p className="pt-8 text-center">{module.desc}</p>
           </div>
         ))}
       </div>

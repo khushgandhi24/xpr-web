@@ -7,14 +7,13 @@ const Footer = () => {
       flex flex-col py-4 gap-4"
     >
       <div className="flex-row">
-        <h3 className="text-center italic font-semibold pb-1">Powered By</h3>
+        <h3 className="text-center italic font-semibold pl-9">powered by</h3>
         <a href="https://busisoft.in" target="_blank">
           <Image
             src="/Busisoft.png"
             width={160}
             height={120}
             alt="Busisoft Logo"
-            priority={true}
             className="mx-auto"
           />
         </a>

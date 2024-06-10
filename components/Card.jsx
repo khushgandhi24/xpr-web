@@ -11,14 +11,14 @@ const Card = ({ img, title, mId, func }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ type: "spring", duration: 0.75 }}
-      whileHover={{ scale: 1.2 }}
+      whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 1.1 }}
     >
       <div
         className="rounded-[50%] px-2 bg-surface border-4 border-primaryContainer w-[240px] h-[240px] mb-2 text-center flex flex-col items-center justify-evenly"
         onClick={func}
       >
-        <Image src={img} width={200} height={200} alt={mId}/>
+        <Image src={img} width={200} height={200} alt={mId} unoptimized={true}/>
       </div>
     </motion.div>
     </div>
