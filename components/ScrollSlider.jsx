@@ -35,7 +35,7 @@ const ScrollSlider = ({ modules, renderComponent }) => {
         {modules.map((module) => (
           <div
             key={module.id}
-            className="py-6 px-[5.5rem] bg-surface snap-center basis-full"
+            className="py-6 px-[5.5rem] bg-surface snap-center snap-always basis-full"
           >
             {renderComponent(module)}
             <p className="pt-8">{module.desc}</p>

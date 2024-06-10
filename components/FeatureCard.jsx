@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const FeatureCard = ({ title, desc, icon }) => {
   return (
-    <div className="p-8 space-y-2 w-[340px] ml-3 mr-[0.75rem] lg:w-auto lg:mx-0 lg:space-y-3 border-2 border-outline rounded-xl">
+    <div className="p-8 space-y-2 w-[85vw] ml-2 mr-2 lg:w-auto lg:mx-0 lg:space-y-3 border-2 border-outline rounded-xl">
       <span className="inline-block text-primary">{icon}</span>
 
       <h1 className="text-xl font-semibold text-gray-800 capitalize ">

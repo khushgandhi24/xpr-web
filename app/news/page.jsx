@@ -68,7 +68,7 @@ function News() {
               ref={ref}
             >
               {Articles.map((article) => (
-                <div key={article.id} className="snap-center basis-full">
+                <div key={article.id} className="snap-center snap-always basis-full">
                   <Article
                     key={article.id}
                     title={article.title}

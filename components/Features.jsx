@@ -46,21 +46,21 @@ const Features = () => {
         </div>
         <div className="mt-8 lg:hidden">
           <>
-            <motion.div
+            {/* <motion.div
               whileTap={{ scale: 1.5 }}
               className="absolute top-[85%] left-2 text-2xl font-bold cursor-pointer"
               onClick={() => {
-                handleHorizantalScroll(ref.current, 100, 400, -400);
+                handleHorizantalScroll(ref.current, 100, 340, -340);
               }}
             >
               &lt;
-            </motion.div>
+            </motion.div> */}
             <div
               className="flex flex-row flex-nowrap overflow-x-scroll no-scrollbar scroll-smooth snap-x snap-mandatory"
               ref={ref}
             >
               {Highlights.map((highlight) => (
-                <div key={highlight.id} className="snap-center basis-full">
+                <div key={highlight.id} className="snap-center snap-always basis-full">
                   <FeatureCard
                     title={highlight.title}
                     desc={highlight.desc}
@@ -69,15 +69,15 @@ const Features = () => {
                 </div>
               ))}
             </div>
-            <motion.div
+            {/* <motion.div
               whileTap={{ scale: 1.5 }}
               className="absolute top-[85%] left-[93%] text-2xl font-bold cursor-pointer"
               onClick={() => {
-                handleHorizantalScroll(ref.current, 100, 400, 400);
+                handleHorizantalScroll(ref.current, 100, 340, 340);
               }}
             >
               &gt;
-            </motion.div>
+            </motion.div> */}
           </>
         </div>
       </div>
