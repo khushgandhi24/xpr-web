@@ -1,17 +1,15 @@
-import Image from "next/image";
-
 function Article({ hero, author, role, title, short, link }) {
   return (
     <div className="w-[340px] ml-3 mr-[0.75rem] lg:w-auto lg:mx-0">
       <div className="relative">
-        <Image
+        <img
           className="object-cover object-center w-full h-64 rounded-lg lg:h-80"
           src={hero}
           alt={title}
         />
 
         <div className="absolute bottom-0 flex p-3 bg-white dark:bg-gray-900 ">
-          <Image
+          <img
             className="object-cover object-center w-10 h-10 rounded-full"
             src="/Xpr_Logo.png"
             alt={author}

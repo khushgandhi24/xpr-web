@@ -10,6 +10,7 @@ const ScrollSlider = ({ modules, renderComponent }) => {
     let scrollAmount = 0;
     const slideTimer = setInterval(() => {
       element.scrollLeft += step;
+      console.log(element.scrollLeft);
       scrollAmount += Math.abs(step);
       if (scrollAmount >= distance) {
         clearInterval(slideTimer);

@@ -2,37 +2,37 @@ import { FlameIcon } from "./svgs";
 
 export const Modules = [
   {
-    img: "/Xpr_Cloud_Color.png",
+    img: "/Ops1.png",
     title: "Operations, Billing and Track-n-Trace",
     desc: "This software facilitates the day to day operations, billing and Track-n-Trace functionality for a courier and cargo and/or logistics company",
     id: 1,
   },
   {
-    img: "/Xpr_Cloud_Color.png",
+    img: "/Ecomm.png",
     title: "eCommerce Management",
     desc: "Powerful yet Seamless integration solution available to integrate ecommerce companies with logistics service provider to ensure booking thru last mile delivery tracked and managed well",
     id: 2,
   },
   {
-    img: "/Xpr_Cloud_Color.png",
+    img: "/Warehouse.gif",
     title: "Warehouse Management",
     desc: "Integrated solution to manage point in time Inventory, Dispatches, and Delivery across all ware houses anytime anywhere.",
     id: 3,
   },
   {
-    img: "/Xpr_Cloud_Color.png",
+    img: "/Tally2.gif",
     title: "Tally Bridge",
     desc: "Tally ERP integrates with Xpresion seamlessly",
     id: 4,
   },
   {
-    img: "/Xpr_Cloud_Color.png",
+    img: "/api2.gif",
     title: "3rd party API Integration",
     desc: "Provides a facility to integrate & manage external service providers including shipping and shipment delivery.",
     id: 5,
   },
   {
-    img: "/Xpr_Cloud_Color.png",
+    img: "/EDI.png",
     title: "Indian Customs EDI Software Integration",
     desc: "This software facilitates the day to day operations, billing and Track-n-Trace functionality for a courier and cargo and/or logistics company",
     id: 6,

@@ -4,7 +4,9 @@ import Image from "next/image";
 
 const Card = ({ img, title, mId, func }) => {
   return (
-    <motion.div
+    <div className="flex flex-col-reverse">
+    <h2 className="w-[180px] text-lg text-center mx-auto">{title}</h2>
+      <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -13,13 +15,13 @@ const Card = ({ img, title, mId, func }) => {
       whileTap={{ scale: 1.1 }}
     >
       <div
-        className="rounded-[50%] px-2 bg-primaryContainer w-[240px] h-[240px] text-center flex flex-col items-center justify-evenly"
+        className="rounded-[50%] px-2 bg-surface border-4 border-primaryContainer w-[240px] h-[240px] mb-2 text-center flex flex-col items-center justify-evenly"
         onClick={func}
       >
-        <Image src={img} width={200} height={200} alt={mId} />
-        <h2 className="w-[180px] text-lg">{title}</h2>
+        <Image src={img} width={200} height={200} alt={mId}/>
       </div>
     </motion.div>
+    </div>
   );
 };
 
