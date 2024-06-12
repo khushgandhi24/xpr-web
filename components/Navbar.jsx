@@ -1,12 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from 'next/navigation'
 import Link from "next/link";
 import Image from "next/image";
 import Button from "./Button";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+
+  const pathname = usePathname();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -18,7 +22,7 @@ const Navbar = () => {
       <Link href="/">
         <Image
           className="cursor-pointer"
-          src="/Xpr_Cloud_Color.png"
+          src="/Xpr_Red.png"
           alt="Xpresion Logo"
           width={160}
           height={80}
@@ -27,10 +31,11 @@ const Navbar = () => {
         />
       </Link>
       <ul className="hidden h-full gap-12 lg:flex items-center">
-        <Link href="/module">Modules</Link>
-        <Link href="/about">About</Link>
-        <Link href="/news">News</Link>
-        <a href="https://www.xpresion.in/contact.html">Contact</a>
+        <Link className={`${pathname === '/' ? 'underline decoration-2 decoration-error underline-offset-2 font-semibold': ''}`} href = "/"> Home </Link>
+        <Link className={`${pathname === '/module' ? 'underline decoration-2 decoration-error underline-offset-2 font-semibold': ''}`} href="/module">Modules</Link>
+        <Link className={`${pathname === '/about' ? 'underline decoration-2 decoration-error underline-offset-2 font-semibold': ''}`} href="/about">About</Link>
+        <Link className={`${pathname === '/news' ? 'underline decoration-2 decoration-error underline-offset-2 font-semibold': ''}`} href="/news">News</Link>
+        <a target="_blank" href="https://www.xpresion.in/contact.html">Contact</a>
         <Button
           title={"Book A Demo"}
           bgColor={"bg-primary"}

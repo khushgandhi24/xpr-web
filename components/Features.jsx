@@ -23,8 +23,8 @@ const Features = () => {
     <section className="bg-gradient-to-b from-primaryContainer to-surface">
       <div className="container px-6 py-10 mx-auto">
         <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
-          explore our <br /> awesome{" "}
-          <span className="underline decoration-primary">Features</span>
+          Why choose<br />Xpresion{" "}
+          <span className="underline decoration-primary">for your business?</span>
         </h1>
 
         <p className="mt-4 text-gray-600 xl:mt-6">

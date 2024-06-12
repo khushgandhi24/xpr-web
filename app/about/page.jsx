@@ -9,8 +9,8 @@ const Chrono = dynamic(() => import("react-chrono").then((mod) => mod.Chrono), {
 function About() {
   return (
     <section className="border-b-2 pt-6 border-primary">
-      <h1 className="text-3xl text-onSurface text-center my-4 font-semibold italic lg:not-italic">
-        Our Journey
+      <h1 className="text-2xl lg:text-3xl text-onSurface text-center my-4 font-semibold italic lg:not-italic">
+        Xpresion&apos;s Evolution:<br className="lg:hidden"/> <span className=" italic">Landmark Innovations</span><br className="lg:hidden"/> Through the Years
       </h1>
       <div className="w-full h-[600x] py-4 px-12 hidden lg:flex">
         <Chrono
