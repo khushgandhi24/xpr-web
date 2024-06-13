@@ -20,21 +20,24 @@ const Home = () => {
           className="lg:basis-2/5"
         />
         <article className="lg:basis-2/5 px-4">
-          <h1 className="text-2xl font-bold text-center lg:text-start">
-            Hero Title
+          <h1 className="text-4xl font-semibold text-center lg:text-start leading-snug">
+            Delivering Excellence on Time, <br className="" />
+            <span className="text-primary italic">Every Time</span>.
           </h1>
-          <h3 className="text-xl my-2 text-center lg:text-start">Subtitle</h3>
-          <p className="hidden lg:block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            vitae mauris risus. In hac habitasse platea dictumst. In tempor nibh
-            id est posuere semper. Pellentesque dapibus nibh purus, vel
-            ultricies ipsum pretium sit amet. Integer eu dictum nibh, vehicula
-            bibendum urna. Sed interdum blandit sapien, sit amet lobortis urna
-            varius id. Maecenas nulla neque, dapibus non rutrum vel, auctor
-            vitae sapien. Etiam commodo luctus ex in feugiat. In et libero a
-            metus pretium blandit elementum eu magna. Donec at luctus lectus.
-            Vivamus luctus lacus non interdum ullamcorper. Nulla non lacinia
-            neque. Etiam ornare arcu nec varius laoreet.
+          <h3 className="text-2xl text-error/85 font-semibold my-4 text-center lg:text-start">
+            Experience the Difference with Xpresion
+          </h3>
+          <p className="hidden lg:block text-lg">
+            Step into the future of logistics management with Xpresion. For a
+            quarter of a century, Xpresion has stood as the industry's premier
+            choice, trusted by countless companies worldwide. Our commitment to
+            innovation ensures that Xpresion evolves alongside the dynamic needs
+            of the logistics sector. From day-to-day operations to billing,
+            track and trace, and more, Xpresion's cloud-based software delivers
+            a comprehensive suite of features designed to streamline your
+            processes seamlessly. Join the legacy of excellence with Xpresion
+            and unlock the full potential of your logistics operations with our
+            state-of-the-art software solution.
           </p>
           <Accordion
             className="lg:hidden bg-primaryContainer border-2 border-primary"
@@ -51,10 +54,17 @@ const Home = () => {
             >
               Read more...
             </AccordionSummary>
-            <AccordionDetails>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+            <AccordionDetails className="font-semibold text-onSurface">
+              Step into the future of logistics management with Xpresion. For a
+              quarter of a century, Xpresion has stood as the industry's premier
+              choice, trusted by countless companies worldwide. Our commitment
+              to innovation ensures that Xpresion evolves alongside the dynamic
+              needs of the logistics sector. From day-to-day operations to
+              billing, track and trace, and more, Xpresion's cloud-based
+              software delivers a comprehensive suite of features designed to
+              streamline your processes seamlessly. Join the legacy of
+              excellence with Xpresion and unlock the full potential of your
+              logistics operations with our state-of-the-art software solution.
             </AccordionDetails>
           </Accordion>
           <div className="flex flex-row mt-6 gap-8 justify-center lg:justify-start">
@@ -67,10 +77,10 @@ const Home = () => {
             />
             <Button
               title={"Learn More"}
-              borderColor={"border-complimentary"}
-              bgColor={"bg-complimentary"}
+              borderColor={"border-primary"}
+              bgColor={"bg-primary"}
               textColor={"text-surface"}
-              className={"hover:bg-surface hover:text-complimentary"}
+              className={"hover:bg-surface hover:text-primary"}
             />
           </div>
         </article>

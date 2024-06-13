@@ -1,6 +1,7 @@
 "use client";
 
 import Article from "@/components/Article";
+import Comments from "@/components/Comments";
 import ParallaxText from "@/components/ParallaxText";
 import { Articles } from "@/public/constants";
 import { motion } from "framer-motion";
@@ -23,6 +24,9 @@ function News() {
   return (
     <section className="bg-white">
       <div className="container px-6 py-10 mx-auto">
+        <div className="py-4 mb-6 mx-auto">
+          <Comments />
+        </div>
         <div className="text-center">
           <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
             <span className="italic lg:hidden">
@@ -68,7 +72,10 @@ function News() {
               ref={ref}
             >
               {Articles.map((article) => (
-                <div key={article.id} className="snap-center snap-always basis-full">
+                <div
+                  key={article.id}
+                  className="snap-center snap-always basis-full"
+                >
                   <Article
                     key={article.id}
                     title={article.title}

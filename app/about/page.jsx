@@ -16,9 +16,9 @@ function About() {
         <Chrono
           items={Items}
           itemWidth={500}
-          cardWidth={900}
-          cardHeight={400}
-          mode="HORIZONTAL"
+          cardWidth={600}
+          cardHeight={300}
+          mode="VERTICAL_ALTERNATING"
           disableToolbar={true}
           fontSizes={{
             cardSubtitle: "1rem",
@@ -43,8 +43,6 @@ function About() {
           items={Items}
           mode="VERTICAL"
           disableToolbar={true}
-          //nestedCardHeight
-          //showAllCardsHorizontal={true}
           theme={{
             primary: "#385Ca9",
             secondary: "#D9E2FF",
