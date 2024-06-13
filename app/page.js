@@ -29,15 +29,15 @@ const Home = () => {
           </h3>
           <p className="hidden lg:block text-lg">
             Step into the future of logistics management with Xpresion. For a
-            quarter of a century, Xpresion has stood as the industry's premier
-            choice, trusted by countless companies worldwide. Our commitment to
-            innovation ensures that Xpresion evolves alongside the dynamic needs
-            of the logistics sector. From day-to-day operations to billing,
-            track and trace, and more, Xpresion's cloud-based software delivers
-            a comprehensive suite of features designed to streamline your
-            processes seamlessly. Join the legacy of excellence with Xpresion
-            and unlock the full potential of your logistics operations with our
-            state-of-the-art software solution.
+            quarter of a century, Xpresion has stood as the industry&apos;s
+            premier choice, trusted by countless companies worldwide. Our
+            commitment to innovation ensures that Xpresion evolves alongside the
+            dynamic needs of the logistics sector. From day-to-day operations to
+            billing, track and trace, and more, Xpresion&apos;s cloud-based
+            software delivers a comprehensive suite of features designed to
+            streamline your processes seamlessly. Join the legacy of excellence
+            with Xpresion and unlock the full potential of your logistics
+            operations with our state-of-the-art software solution.
           </p>
           <Accordion
             className="lg:hidden bg-primaryContainer border-2 border-primary"
@@ -56,14 +56,14 @@ const Home = () => {
             </AccordionSummary>
             <AccordionDetails className="font-semibold text-onSurface">
               Step into the future of logistics management with Xpresion. For a
-              quarter of a century, Xpresion has stood as the industry's premier
-              choice, trusted by countless companies worldwide. Our commitment
-              to innovation ensures that Xpresion evolves alongside the dynamic
-              needs of the logistics sector. From day-to-day operations to
-              billing, track and trace, and more, Xpresion's cloud-based
-              software delivers a comprehensive suite of features designed to
-              streamline your processes seamlessly. Join the legacy of
-              excellence with Xpresion and unlock the full potential of your
+              quarter of a century, Xpresion has stood as the industry&apos;s
+              premier choice, trusted by countless companies worldwide. Our
+              commitment to innovation ensures that Xpresion evolves alongside
+              the dynamic needs of the logistics sector. From day-to-day
+              operations to billing, track and trace, and more, Xpresion&apos;s
+              cloud-based software delivers a comprehensive suite of features
+              designed to streamline your processes seamlessly. Join the legacy
+              of excellence with Xpresion and unlock the full potential of your
               logistics operations with our state-of-the-art software solution.
             </AccordionDetails>
           </Accordion>
