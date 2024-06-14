@@ -4,11 +4,11 @@ import Image from "next/image";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
-import { FlameIcon } from "@/public/svgs";
+import { ArrowIcon } from "@/public/svgs";
 
 const Home = () => {
   return (
-    <>
+    <div className="h-[70vh] overflow-y-scroll lg:h-full">
       <section className="lg:flex lg:items-center lg:justify-between lg:px-12 lg:py-4 bg-gradient-to-b from-surface to-primaryContainer">
         <Image
           src="/Xp1.png"
@@ -20,11 +20,11 @@ const Home = () => {
           className="lg:basis-2/5"
         />
         <article className="lg:basis-2/5 px-4">
-          <h1 className="text-4xl font-semibold text-center lg:text-start leading-snug">
+          <h1 className="text-2xl lg:text-4xl font-semibold text-center lg:text-start leading-snug">
             Delivering Excellence on Time, <br className="" />
             <span className="text-primary italic">Every Time</span>.
           </h1>
-          <h3 className="text-2xl text-error/85 font-semibold my-4 text-center lg:text-start">
+          <h3 className="text-lg lg:text-2xl text-error/85 font-semibold my-4 text-center lg:text-start">
             Experience the Difference with Xpresion
           </h3>
           <p className="hidden lg:block text-lg">
@@ -40,15 +40,15 @@ const Home = () => {
             operations with our state-of-the-art software solution.
           </p>
           <Accordion
-            className="lg:hidden bg-primaryContainer border-2 border-primary"
+            className="lg:hidden bg-surface border-2 border-primary"
             sx={{
               boxShadow: 0,
               borderRadius: 1,
             }}
           >
             <AccordionSummary
-              sx={{ fontWeight: 600 }}
-              expandIcon={<FlameIcon />}
+              sx={{ fontWeight: 700, fontSize: 16 }}
+              expandIcon={<ArrowIcon />}
               aria-controls="panel1-content"
               id="panel1-header"
             >
@@ -88,7 +88,7 @@ const Home = () => {
       <section>
         <Features />
       </section>
-    </>
+    </div>
   );
 };
 

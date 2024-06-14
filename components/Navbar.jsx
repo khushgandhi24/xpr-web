@@ -1,14 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { usePathname } from 'next/navigation'
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "./Button";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-
   const pathname = usePathname();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -31,11 +30,50 @@ const Navbar = () => {
         />
       </Link>
       <ul className="hidden h-full gap-12 lg:flex items-center">
-        <Link className={`${pathname === '/' ? 'underline decoration-2 decoration-error underline-offset-2 font-semibold': ''}`} href = "/"> Home </Link>
-        <Link className={`${pathname === '/module' ? 'underline decoration-2 decoration-error underline-offset-2 font-semibold': ''}`} href="/module">Modules</Link>
-        <Link className={`${pathname === '/about' ? 'underline decoration-2 decoration-error underline-offset-2 font-semibold': ''}`} href="/about">About</Link>
-        <Link className={`${pathname === '/news' ? 'underline decoration-2 decoration-error underline-offset-2 font-semibold': ''}`} href="/news">News</Link>
-        <a target="_blank" href="https://www.xpresion.in/contact.html">Contact</a>
+        <Link
+          className={`${
+            pathname === "/"
+              ? "underline decoration-2 decoration-error underline-offset-2 font-semibold"
+              : ""
+          }`}
+          href="/"
+        >
+          {" "}
+          Home{" "}
+        </Link>
+        <Link
+          className={`${
+            pathname === "/module"
+              ? "underline decoration-2 decoration-error underline-offset-2 font-semibold"
+              : ""
+          }`}
+          href="/module"
+        >
+          Modules
+        </Link>
+        <Link
+          className={`${
+            pathname === "/about"
+              ? "underline decoration-2 decoration-error underline-offset-2 font-semibold"
+              : ""
+          }`}
+          href="/about"
+        >
+          About
+        </Link>
+        <Link
+          className={`${
+            pathname === "/news"
+              ? "underline decoration-2 decoration-error underline-offset-2 font-semibold"
+              : ""
+          }`}
+          href="/news"
+        >
+          News
+        </Link>
+        <a target="_blank" href="https://www.xpresion.in/contact.html">
+          Contact
+        </a>
         <Button
           title={"Book A Demo"}
           bgColor={"bg-primary"}
@@ -74,13 +112,48 @@ const Navbar = () => {
           className="min-w-[80vw] rounded-xl border-4 border-outline backdrop-blur-md flex flex-col justify-between items-center absolute top-[27rem] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-primaryContainer py-12"
         >
           <nav className="flex items-center flex-col text-lg justify-around gap-6 text-onPrimaryContainer font-semibold">
-            <Link href="/module" onClick={handleClick}>
+            <Link
+              href="/"
+              onClick={handleClick}
+              className={`${
+                pathname === "/"
+                  ? "underline decoration-2 decoration-error underline-offset-4 font-semibold"
+                  : ""
+              }`}
+            >
+              Home
+            </Link>
+            <Link
+              href="/module"
+              onClick={handleClick}
+              className={`${
+                pathname === "/module"
+                  ? "underline decoration-2 decoration-error underline-offset-4 font-semibold"
+                  : ""
+              }`}
+            >
               Modules
             </Link>
-            <Link href="/about" onClick={handleClick}>
+            <Link
+              href="/about"
+              onClick={handleClick}
+              className={`${
+                pathname === "/about"
+                  ? "underline decoration-2 decoration-error underline-offset-4 font-semibold"
+                  : ""
+              }`}
+            >
               About
             </Link>
-            <Link href="/news" onClick={handleClick}>
+            <Link
+              href="/news"
+              onClick={handleClick}
+              className={`${
+                pathname === "/news"
+                  ? "underline decoration-2 decoration-error underline-offset-4 font-semibold"
+                  : ""
+              }`}
+            >
               News
             </Link>
             <a href="https://www.xpresion.in/contact.html">Contact</a>

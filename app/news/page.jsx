@@ -29,10 +29,10 @@ function News() {
         </div>
         <div className="text-center">
           <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
-            <span className="italic lg:hidden">
+            {/* <span className="italic lg:hidden">
               <ParallaxText baseVelocity={5}>From the blog</ParallaxText>
-            </span>
-            <span className="hidden lg:block">From the blog</span>
+            </span> */}
+            <span className="italic">From the blog</span>
           </h1>
 
           <p className="max-w-lg mx-auto mt-4 text-gray-500">
@@ -41,7 +41,7 @@ function News() {
           </p>
         </div>
 
-        <div className="hidden lg:grid lg:grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
+        <div className="hidden lg:grid lg:grid-cols-1 gap-8 mt-8 lg:mt-12 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
           {Articles.map((article) => {
             return (
               <Article
