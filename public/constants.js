@@ -42,20 +42,20 @@ export const Modules = [
 export const Highlights = [
   {
     icon: <FlameIcon />,
-    title: "Operations, Billing and Track-n-Trace",
-    desc: "This software facilitates the day to day operations, billing and Track-n-Trace functionality for a courier and cargo and/or logistics company",
+    title: "Customisable Cloud-Based Software",
+    desc: "Xpresion's cloud-based software delivers a comprehensive suite of features, evolving alongside the dynamic needs of the logistics sector.",
     id: 1,
   },
   {
     icon: <FlameIcon />,
-    title: "Operations, Billing and Track-n-Trace",
-    desc: "This software facilitates the day to day operations, billing and Track-n-Trace functionality for a courier and cargo and/or logistics company",
+    title: "Streamlined Operations",
+    desc: "Xpresion unlocks the full potential of your logistics operations, by streamlining day-to-day processes seamlessly",
     id: 2,
   },
   {
     icon: <FlameIcon />,
-    title: "Operations, Billing and Track-n-Trace",
-    desc: "This software facilitates the day to day operations, billing and Track-n-Trace functionality for a courier and cargo and/or logistics company",
+    title: "Unmatched Experience",
+    desc: "With over 3 decades of expertise and proven industry success, Xpresion provides a competitve edge in a fast-paced market.",
     id: 3,
   },
 ];

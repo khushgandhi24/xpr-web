@@ -8,16 +8,16 @@ import { ArrowIcon } from "@/public/svgs";
 
 const Home = () => {
   return (
-    <div className="h-[70vh] overflow-y-scroll lg:h-full">
+    <div className="h-[70vh] overflow-y-scroll no-scrollbar lg:h-full">
       <section className="lg:flex lg:items-center lg:justify-between lg:px-12 lg:py-4 bg-gradient-to-b from-surface to-primaryContainer">
         <Image
-          src="/Xp1.png"
+          src="/Hero.svg"
           alt="Xpresion Hero Image"
           priority={true}
           //sizes="(max-width: 560px) 100vw, 100vw"
           width={662}
           height={480}
-          className="lg:basis-2/5"
+          className="lg:basis-2/5 lg:mt-20 lg:ml-6 lg:pt-0 pt-6"
         />
         <article className="lg:basis-2/5 px-4">
           <h1 className="text-2xl lg:text-4xl font-semibold text-center lg:text-start leading-snug">
@@ -28,16 +28,9 @@ const Home = () => {
             Experience the Difference with Xpresion
           </h3>
           <p className="hidden lg:block text-lg">
-            Step into the future of logistics management with Xpresion. For a
-            quarter of a century, Xpresion has stood as the industry&apos;s
-            premier choice, trusted by countless companies worldwide. Our
-            commitment to innovation ensures that Xpresion evolves alongside the
-            dynamic needs of the logistics sector. From day-to-day operations to
-            billing, track and trace, and more, Xpresion&apos;s cloud-based
-            software delivers a comprehensive suite of features designed to
-            streamline your processes seamlessly. Join the legacy of excellence
-            with Xpresion and unlock the full potential of your logistics
-            operations with our state-of-the-art software solution.
+            Step into the future of logistics management with Xpresion, the
+            industry&apos;s premier choice, trusted by countless companies
+            worldwide.
           </p>
           <Accordion
             className="lg:hidden bg-surface border-2 border-primary"
@@ -55,16 +48,9 @@ const Home = () => {
               Read more...
             </AccordionSummary>
             <AccordionDetails className="font-semibold text-onSurface">
-              Step into the future of logistics management with Xpresion. For a
-              quarter of a century, Xpresion has stood as the industry&apos;s
-              premier choice, trusted by countless companies worldwide. Our
-              commitment to innovation ensures that Xpresion evolves alongside
-              the dynamic needs of the logistics sector. From day-to-day
-              operations to billing, track and trace, and more, Xpresion&apos;s
-              cloud-based software delivers a comprehensive suite of features
-              designed to streamline your processes seamlessly. Join the legacy
-              of excellence with Xpresion and unlock the full potential of your
-              logistics operations with our state-of-the-art software solution.
+              Step into the future of logistics management with Xpresion, the
+              industry&apos;s premier choice, trusted by countless companies
+              worldwide.
             </AccordionDetails>
           </Accordion>
           <div className="flex flex-row mt-6 gap-8 justify-center lg:justify-start">

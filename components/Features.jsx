@@ -23,14 +23,13 @@ const Features = () => {
     <section className="bg-gradient-to-b from-primaryContainer to-surface">
       <div className="container px-6 py-10 mx-auto">
         <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
-          Why choose<br />Xpresion{" "}
-          <span className="underline decoration-primary">for your business?</span>
+          Why choose
+          <br />
+          Xpresion{" "}
+          <span className="underline decoration-primary">
+            for your business?
+          </span>
         </h1>
-
-        <p className="mt-4 text-gray-600 xl:mt-6">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
-          voluptatibus
-        </p>
 
         <div className="hidden lg:grid lg:grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
           {Highlights.map((highlight) => {
@@ -60,7 +59,10 @@ const Features = () => {
               ref={ref}
             >
               {Highlights.map((highlight) => (
-                <div key={highlight.id} className="snap-center snap-always basis-full">
+                <div
+                  key={highlight.id}
+                  className="snap-center snap-always basis-full"
+                >
                   <FeatureCard
                     title={highlight.title}
                     desc={highlight.desc}
