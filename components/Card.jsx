@@ -17,7 +17,7 @@ const Card = ({ img, title, mId, func }) => {
         whileTap={{ scale: 1.1 }}
       >
         <div
-          className="rounded-[50%] px-2 bg-surface border-4 border-primaryContainer w-[240px] h-[240px] mb-2 text-center flex flex-col items-center justify-evenly"
+          className="rounded-[50%] px-2 bg-surface border-4 border-primaryContainer w-[240px] h-[240px] mb-4 text-center flex flex-col items-center justify-evenly"
           onClick={func}
         >
           <Image

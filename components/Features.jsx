@@ -2,10 +2,17 @@
 
 import FeatureCard from "./FeatureCard";
 import { Highlights } from "@/public/constants";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const Features = () => {
+  const { scrollYProgress } = useScroll();
+  const opacity = useTransform(
+    scrollYProgress,
+    [0, 0.2, 0.8, 1],
+    [0, 0.5, 0.75, 1]
+  );
+
   const ref = useRef(null);
 
   const handleHorizantalScroll = (element, speed, distance, step) => {
@@ -22,14 +29,23 @@ const Features = () => {
   return (
     <section className="bg-gradient-to-b from-primaryContainer to-surface">
       <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
-          Why choose
-          <br />
-          Xpresion{" "}
-          <span className="underline decoration-primary">
-            for your business?
-          </span>
-        </h1>
+        <div className="flex flex-row justify-between">
+          <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
+            Why choose
+            <br />
+            Xpresion{" "}
+            <span className="underline decoration-primary">
+              for your business?
+            </span>
+          </h1>
+          <motion.h1
+            style={{ opacity: opacity }}
+            className="text-2xl text-end font-semibold text-primary capitalize lg:text-2xl "
+          >
+            Efficient, Reliable Logistics Management
+            <br /> with Expert-Driven Solutions
+          </motion.h1>
+        </div>
 
         <div className="hidden lg:grid lg:grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
           {Highlights.map((highlight) => {

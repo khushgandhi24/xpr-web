@@ -5,7 +5,7 @@ import ParallaxText from "@/components/ParallaxText";
 function Module() {
   return (
     <section className="pt-6 h-[70vh] lg:h-full">
-      <h1 className="text-3xl text-center font-semibold italic lg:not-italic text-onSurface pt-4 pb-2">
+      <h1 className="text-3xl text-center font-semibold italic lg:not-italic text-onSurface pt-4 ">
         <span className="lg:hidden">
           <ParallaxText baseVelocity={5}>
             Explore Xpresion&apos;s Modules

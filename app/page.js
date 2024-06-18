@@ -64,9 +64,9 @@ const Home = () => {
             <Button
               title={"Learn More"}
               borderColor={"border-primary"}
-              bgColor={"bg-primary"}
-              textColor={"text-surface"}
-              className={"hover:bg-surface hover:text-primary"}
+              bgColor={"bg-surface"}
+              textColor={"text-primary"}
+              className={"hover:bg-primary hover:text-surface"}
             />
           </div>
         </article>
