@@ -24,20 +24,20 @@ function News() {
   return (
     <section className="bg-white">
       <div className="container px-6 py-10 mx-auto">
-        <div className="py-4 mb-6 mx-auto">
+        <div className="py-4 mb-6 font-slab mx-auto">
           <Comments />
         </div>
         <div className="text-center">
-          <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
+          <h1 className="text-2xl font-semibold text-gray-800 lg:text-3xl">
             {/* <span className="italic lg:hidden">
               <ParallaxText baseVelocity={5}>From the blog</ParallaxText>
             </span> */}
-            <span className="italic">From the blog</span>
+            <span className="font-lato">From the blog</span>
           </h1>
 
-          <p className="max-w-lg mx-auto mt-4 text-gray-500">
-            Expert Opinions and Insights on the latest trends in Logistics and
-            Express Industries
+          <p className="max-w-lg mx-auto mt-4 font-lato text-gray-500">
+            Expert opinions and insights on the latest trends in logistics and
+            express industries
           </p>
         </div>
 

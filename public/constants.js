@@ -1,39 +1,39 @@
-import { FlameIcon } from "./svgs";
+import { Verified, Streamline, Customize } from "./svgs";
 
 export const Modules = [
   {
     img: "/Ops1.png",
-    title: "Operations, Billing and Track-n-Trace",
+    title: "Operations, billing and track-n-trace",
     desc: "This software facilitates the day to day operations, billing and Track-n-Trace functionality for a courier and cargo and/or logistics company",
     id: 1,
   },
   {
     img: "/Ecomm.png",
-    title: "eCommerce Management",
+    title: "eCommerce management",
     desc: "Powerful yet Seamless integration solution available to integrate ecommerce companies with logistics service provider to ensure booking thru last mile delivery tracked and managed well",
     id: 2,
   },
   {
     img: "/Warehouse.gif",
-    title: "Warehouse Management",
+    title: "Warehouse management",
     desc: "Integrated solution to manage point in time Inventory, Dispatches, and Delivery across all ware houses anytime anywhere.",
     id: 3,
   },
   {
     img: "/Tally2.gif",
-    title: "Tally Bridge",
+    title: "Tally bridge",
     desc: "Tally ERP integrates with Xpresion seamlessly",
     id: 4,
   },
   {
     img: "/api2.gif",
-    title: "3rd party API Integration",
+    title: "3rd party API integration",
     desc: "Provides a facility to integrate & manage external service providers including shipping and shipment delivery.",
     id: 5,
   },
   {
     img: "/EDI.png",
-    title: "Indian Customs EDI Software Integration",
+    title: "Indian Customs EDI software integration",
     desc: "This software facilitates the day to day operations, billing and Track-n-Trace functionality for a courier and cargo and/or logistics company",
     id: 6,
   },
@@ -41,20 +41,20 @@ export const Modules = [
 
 export const Highlights = [
   {
-    icon: <FlameIcon />,
-    title: "Customisable Cloud-Based Software",
+    icon: <Customize />,
+    title: "Customisable cloud-based software",
     desc: "Xpresion's cloud-based software delivers a comprehensive suite of features, evolving alongside the dynamic needs of the logistics sector.",
     id: 1,
   },
   {
-    icon: <FlameIcon />,
-    title: "Streamlined Operations",
+    icon: <Streamline />,
+    title: "Streamlined operations",
     desc: "Xpresion unlocks the full potential of your logistics operations, by streamlining day-to-day processes seamlessly",
     id: 2,
   },
   {
-    icon: <FlameIcon />,
-    title: "Unmatched Experience",
+    icon: <Verified />,
+    title: "Unmatched experience",
     desc: "With over 3 decades of expertise and proven industry success, Xpresion provides a competitve edge in a fast-paced market.",
     id: 3,
   },

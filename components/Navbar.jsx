@@ -35,7 +35,7 @@ const Navbar = () => {
             pathname === "/"
               ? "underline decoration-2 decoration-error underline-offset-2 font-semibold"
               : ""
-          }`}
+          } text-md`}
           href="/"
         >
           {" "}
@@ -46,7 +46,7 @@ const Navbar = () => {
             pathname === "/module"
               ? "underline decoration-2 decoration-error underline-offset-2 font-semibold"
               : ""
-          }`}
+          } text-md`}
           href="/module"
         >
           Modules
@@ -56,7 +56,7 @@ const Navbar = () => {
             pathname === "/about"
               ? "underline decoration-2 decoration-error underline-offset-2 font-semibold"
               : ""
-          }`}
+          } text-md`}
           href="/about"
         >
           About
@@ -66,19 +66,17 @@ const Navbar = () => {
             pathname === "/news"
               ? "underline decoration-2 decoration-error underline-offset-2 font-semibold"
               : ""
-          }`}
+          } text-md`}
           href="/news"
         >
           News
         </Link>
-        <a target="_blank" href="https://www.xpresion.in/contact.html">
-          Contact
-        </a>
         <Button
-          title={"Book A Demo"}
+          title={"Contact us"}
           bgColor={"bg-primary"}
           textColor={"text-onPrimary"}
           borderColor={"border-primary"}
+          link={"https://www.xpresion.in/contact.html"}
           className={
             "hover:bg-gradient-to-b from-surface to-primaryContainer hover:text-primary"
           }
@@ -111,7 +109,7 @@ const Navbar = () => {
           transition={{ type: "spring", duration: 0.75 }}
           className="min-w-[80vw] rounded-xl border-4 border-outline backdrop-blur-md flex flex-col justify-between items-center absolute top-[27rem] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-primaryContainer py-12"
         >
-          <nav className="flex items-center flex-col text-lg justify-around gap-6 text-onPrimaryContainer font-semibold">
+          <nav className="flex items-center flex-col text-lg justify-around font-lato gap-6 text-onPrimaryContainer font-semibold">
             <Link
               href="/"
               onClick={handleClick}

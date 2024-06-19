@@ -23,6 +23,13 @@ module.exports = {
         surface: "#FEFBFF",
         onSurface: "#001849",
         outline: "#757780",
+        darkGrey: "#333333",
+        darkBlue: "#003366",
+      },
+      fontFamily: {
+        sans: ["Open Sans", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        slab: ["Roboto Slab", "serif"],
       },
     },
   },

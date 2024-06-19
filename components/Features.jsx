@@ -30,20 +30,17 @@ const Features = () => {
     <section className="bg-gradient-to-b from-primaryContainer to-surface">
       <div className="container px-6 py-10 mx-auto">
         <div className="flex flex-row justify-between">
-          <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
+          <h1 className="text-2xl font-semibold text-gray-800 lg:text-3xl font-sans">
             Why choose
             <br />
-            Xpresion{" "}
-            <span className="underline decoration-primary">
-              for your business?
-            </span>
+            Xpresion <span className="font-slab">for your business?</span>
           </h1>
           <motion.h1
             style={{ opacity: opacity }}
-            className="text-2xl text-end font-semibold text-primary capitalize lg:text-2xl "
+            className="text-2xl text-end font-semibold text-onPrimaryContainer lg:text-2xl font-sans"
           >
-            Efficient, Reliable Logistics Management
-            <br /> with Expert-Driven Solutions
+            We provide efficient, reliable logistics management
+            <br /> with expert-driven solutions
           </motion.h1>
         </div>
 

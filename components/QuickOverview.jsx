@@ -32,7 +32,7 @@ const QuickOverview = () => {
           img={Modules[curID - 1].img}
           mId={Modules[curID - 1].id}
         />
-        <p className="text-onPrimaryContainer text-lg font-semibold basis-1/3">
+        <p className="text-onPrimaryContainer text-lg font-semibold basis-1/3 font-sans">
           {Modules[curID - 1].desc}
         </p>
       </div>

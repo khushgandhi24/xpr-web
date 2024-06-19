@@ -3,7 +3,7 @@ function Article({ hero, author, role, title, short, link }) {
     <div className="w-[340px] ml-3 mr-[0.75rem] lg:w-auto lg:mx-0">
       <div className="relative">
         <img
-          className="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+          className="object-cover object-center w-full font-lato h-64 rounded-lg lg:h-80"
           src={hero}
           alt={title}
         />
@@ -16,25 +16,27 @@ function Article({ hero, author, role, title, short, link }) {
           />
 
           <div className="mx-4">
-            <h1 className="text-sm text-gray-700 dark:text-gray-200">
+            <h1 className="text-sm text-gray-700 dark:text-gray-200 font-slab">
               {author}
             </h1>
-            <p className="text-sm text-gray-500 dark:text-gray-400">{role}</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 font-sans">
+              {role}
+            </p>
           </div>
         </div>
       </div>
 
-      <h1 className="mt-6 text-xl font-semibold text-gray-800 dark:text-white">
+      <h1 className="mt-6 text-xl font-semibold text-gray-800 dark:text-white font-lato">
         {title}
       </h1>
 
       <hr className="w-32 my-6 text-blue-500" />
 
-      <p className="text-sm text-gray-500">{short}</p>
+      <p className="text-sm text-gray-500 font-sans">{short}</p>
 
       <a
         href={link}
-        className="inline-block mt-4 text-blue-500 underline hover:text-blue-400"
+        className="inline-block mt-4 text-blue-500 font-slab underline hover:text-blue-400"
       >
         Read more
       </a>
