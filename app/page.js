@@ -28,7 +28,7 @@ const Home = () => {
             Experience the difference with Xpresion
           </h3>
           <p className="hidden lg:block text-lg font-sans text-darkGrey font-normal">
-            Step into the future of logistics management with Xpresion, the
+            Step into the future of logistics management with the
             industry&apos;s premier choice, trusted by countless companies
             worldwide.
           </p>
@@ -48,7 +48,7 @@ const Home = () => {
               Read more...
             </AccordionSummary>
             <AccordionDetails className="font-semibold text-darkGrey">
-              Step into the future of logistics management with Xpresion, the
+              Step into the future of logistics management with the
               industry&apos;s premier choice, trusted by countless companies
               worldwide.
             </AccordionDetails>

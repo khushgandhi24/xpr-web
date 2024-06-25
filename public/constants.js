@@ -43,19 +43,19 @@ export const Highlights = [
   {
     icon: <Customize />,
     title: "Customisable cloud-based software",
-    desc: "Xpresion's cloud-based software delivers a comprehensive suite of features, evolving alongside the dynamic needs of the logistics sector.",
+    desc: "Our cloud-based software delivers a comprehensive suite of features, evolving alongside the dynamic needs of the logistics sector.",
     id: 1,
   },
   {
     icon: <Streamline />,
     title: "Streamlined operations",
-    desc: "Xpresion unlocks the full potential of your logistics operations, by streamlining day-to-day processes seamlessly",
+    desc: "Unlock the full potential of your logistics operations, by streamlining day-to-day processes seamlessly",
     id: 2,
   },
   {
     icon: <Verified />,
     title: "Unmatched experience",
-    desc: "With over 3 decades of expertise and proven industry success, Xpresion provides a competitve edge in a fast-paced market.",
+    desc: "With over 3 decades of expertise and proven industry success, we provide a competitve edge in a fast-paced market.",
     id: 3,
   },
 ];

@@ -5,7 +5,12 @@ import { ArrowDown } from "@/public/svgs";
 
 const FeatureCard = ({ title, desc, icon }) => {
   const [visible, setVisible] = useState(false);
+  const [isRotated, setIsRotated] = useState(false);
 
+  const handleTap = () => {
+    setIsRotated(prev => !prev);
+    view();
+  }
   const view = () => {
     setVisible(!visible);
   };
@@ -26,8 +31,9 @@ const FeatureCard = ({ title, desc, icon }) => {
 
       <motion.a
         whileHover={{ scale: 1.2 }}
-        onTap={view}
-        className="inline-flex p-2 text-primary transition-colors duration-300 transform bg-primaryContainer rounded-full rtl:-scale-x-100 hover:underline hover:text-onPrimaryContainer"
+        onTap={handleTap}
+        animate={{ rotate: isRotated ? 180 : 0 }}
+        className={`inline-flex justify-end p-2 text-primary bg-primaryContainer rounded-full hover:underline hover:text-onPrimaryContainer self-end`}
       >
         <ArrowDown />
       </motion.a>

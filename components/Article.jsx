@@ -36,7 +36,7 @@ function Article({ hero, author, role, title, short, link }) {
 
       <a
         href={link}
-        className="inline-block mt-4 text-blue-500 font-slab underline hover:text-blue-400"
+        className="inline-block mt-4 text-primary font-slab underline hover:text-onPrimaryContainer"
       >
         Read more
       </a>

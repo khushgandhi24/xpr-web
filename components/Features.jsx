@@ -37,7 +37,7 @@ const Features = () => {
           </h1>
           <motion.h1
             style={{ opacity: opacity }}
-            className="text-2xl text-end font-semibold text-onPrimaryContainer lg:text-2xl font-sans"
+            className="text-2xl text-end font-semibold italic text-onPrimaryContainer lg:text-2xl font-sans"
           >
             We provide efficient, reliable logistics management
             <br /> with expert-driven solutions
