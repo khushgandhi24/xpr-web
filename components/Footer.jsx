@@ -20,7 +20,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="lg:flex lg:flex-row text-onPrimaryContainer font-sans lg:pl-20 gap-8 font-semibold text-center text-md flex flex-col">
+      <div className="lg:flex lg:flex-row text-onPrimaryContainer font-sans lg:pl-20 gap-4 font-semibold text-center text-md flex flex-col">
         <h3>Email: info@busisoft.in</h3>
         <h3>Phone: +919998979695</h3>
       </div>

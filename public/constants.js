@@ -1,48 +1,54 @@
-import { Verified, Streamline, Customize } from "./svgs";
+import { Verified, Streamline, CustomerService, Cloud } from "./svgs";
 
 export const Modules = [
   {
     img: "/Ops1.png",
-    title: "Operations, billing and track-n-trace",
-    desc: "This software facilitates the day to day operations, billing and Track-n-Trace functionality for a courier and cargo and/or logistics company",
+    title: "Operational Efficiency",
+    desc: "Streamline your logistics operations effortlessly with our all-in-one software solution. Manage daily tasks, streamline billing, and empower real-time Track-n-Trace capabilities for your courier and cargo operations.",
+    htext: "Streamline your logistics operations effortlessly",
     id: 1,
   },
   {
     img: "/Ecomm.png",
-    title: "eCommerce management",
-    desc: "Powerful yet Seamless integration solution available to integrate ecommerce companies with logistics service provider to ensure booking thru last mile delivery tracked and managed well",
+    title: "E-commerce",
+    desc: "Empower your ecommerce logistics seamlessly with our robust integration solution. From booking to last mile delivery, ensure every step is tracked and managed efficiently, enhancing customer satisfaction and operational excellence.",
+    htext: "Empower your ecommerce logistics seamlessly",
     id: 2,
   },
   {
     img: "/Warehouse.gif",
-    title: "Warehouse management",
-    desc: "Integrated solution to manage point in time Inventory, Dispatches, and Delivery across all ware houses anytime anywhere.",
+    title: "Warehouse",
+    desc: "Optimize your warehousing logistics with our integrated software solution, providing real-time management of inventory, dispatches, and deliveries across all warehouses. Experience enhanced visibility and operational control to meet the demands of modern logistics seamlessly",
+    htext: "Optimize your warehousing logistics",
     id: 3,
   },
   {
     img: "/Tally2.gif",
-    title: "Tally bridge",
-    desc: "Tally ERP integrates with Xpresion seamlessly",
+    title: "Tally Bridge",
+    desc: "Unlock enhanced logistics management with our software's integration of Tally ERP and Xpresion. Streamline operations effortlessly by synchronizing data between systems, ensuring precision in inventory management, transactions, and financial insights with this powerful integration",
+    htext: "Unlock enhanced logistics management",
     id: 4,
   },
   {
     img: "/api2.gif",
     title: "3rd party API integration",
-    desc: "Provides a facility to integrate & manage external service providers including shipping and shipment delivery.",
+    desc: "Transform your logistics with our software's integrated solution for managing external service providers, including shipping and delivery logistics. Streamline operations and boost transparency throughout your supply chain, ensuring seamless coordination and enhanced customer satisfaction.",
+    htext: "Transform your logistics",
     id: 5,
   },
   {
     img: "/EDI.png",
-    title: "Indian Customs EDI software integration",
+    title: "Indian Customs EDI integration",
     desc: "This software facilitates the day to day operations, billing and Track-n-Trace functionality for a courier and cargo and/or logistics company",
+    htext: "Customs EDI Integration",
     id: 6,
   },
 ];
 
 export const Highlights = [
   {
-    icon: <Customize />,
-    title: "Customisable cloud-based software",
+    icon: <Cloud />,
+    title: "Cloud-based software",
     desc: "Our cloud-based software delivers a comprehensive suite of features, evolving alongside the dynamic needs of the logistics sector.",
     id: 1,
   },
@@ -58,6 +64,12 @@ export const Highlights = [
     desc: "With over 3 decades of expertise and proven industry success, we provide a competitve edge in a fast-paced market.",
     id: 3,
   },
+  {
+    icon: <CustomerService />,
+    title: "Dedicated customer service",
+    desc: "We live by our philosophy, 'Customer satisfaction is our sole purpose.' Every product and service is designed to ensure complete satisfaction.",
+    id: 4
+  }
 ];
 
 export const Articles = [
@@ -103,53 +115,53 @@ export const Articles = [
   },
 ];
 
-export const Items = [
-  {
-    title: "1996",
-    cardTitle: "Event 1",
-    cardSubtitle: "This is the subtitle for event 1",
-    cardDetailedText: "This is a detailed text for event 1.",
-  },
-  {
-    title: "1999",
-    cardTitle: "Event 2",
-    cardSubtitle: "This is the subtitle for event 2",
-    cardDetailedText: "This is a detailed text for event 2.",
-  },
-  {
-    title: "2001",
-    cardTitle: "Event 3",
-    cardSubtitle: "This is the subtitle for event 3",
-    cardDetailedText: "This is a detailed text for event 3.",
-  },
-  {
-    title: "2005",
-    cardTitle: "Event 3",
-    cardSubtitle: "This is the subtitle for event 3",
-    cardDetailedText: "This is a detailed text for event 3.",
-  },
-  {
-    title: "2011",
-    cardTitle: "Event 3",
-    cardSubtitle: "This is the subtitle for event 3",
-    cardDetailedText: "This is a detailed text for event 3.",
-  },
-  {
-    title: "2017",
-    cardTitle: "Event 3",
-    cardSubtitle: "This is the subtitle for event 3",
-    cardDetailedText: "This is a detailed text for event 3.",
-  },
-  {
-    title: "2020",
-    cardTitle: "Event 3",
-    cardSubtitle: "This is the subtitle for event 3",
-    cardDetailedText: "This is a detailed text for event 3.",
-  },
-  {
-    title: "2024",
-    cardTitle: "Event 3",
-    cardSubtitle: "This is the subtitle for event 3",
-    cardDetailedText: "This is a detailed text for event 3.",
-  },
-];
+// export const Items = [
+//   {
+//     title: "1996",
+//     cardTitle: "Event 1",
+//     cardSubtitle: "This is the subtitle for event 1",
+//     cardDetailedText: "This is a detailed text for event 1.",
+//   },
+//   {
+//     title: "1999",
+//     cardTitle: "Event 2",
+//     cardSubtitle: "This is the subtitle for event 2",
+//     cardDetailedText: "This is a detailed text for event 2.",
+//   },
+//   {
+//     title: "2001",
+//     cardTitle: "Event 3",
+//     cardSubtitle: "This is the subtitle for event 3",
+//     cardDetailedText: "This is a detailed text for event 3.",
+//   },
+//   {
+//     title: "2005",
+//     cardTitle: "Event 3",
+//     cardSubtitle: "This is the subtitle for event 3",
+//     cardDetailedText: "This is a detailed text for event 3.",
+//   },
+//   {
+//     title: "2011",
+//     cardTitle: "Event 3",
+//     cardSubtitle: "This is the subtitle for event 3",
+//     cardDetailedText: "This is a detailed text for event 3.",
+//   },
+//   {
+//     title: "2017",
+//     cardTitle: "Event 3",
+//     cardSubtitle: "This is the subtitle for event 3",
+//     cardDetailedText: "This is a detailed text for event 3.",
+//   },
+//   {
+//     title: "2020",
+//     cardTitle: "Event 3",
+//     cardSubtitle: "This is the subtitle for event 3",
+//     cardDetailedText: "This is a detailed text for event 3.",
+//   },
+//   {
+//     title: "2024",
+//     cardTitle: "Event 3",
+//     cardSubtitle: "This is the subtitle for event 3",
+//     cardDetailedText: "This is a detailed text for event 3.",
+//   },
+// ];

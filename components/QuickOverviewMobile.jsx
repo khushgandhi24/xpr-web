@@ -64,11 +64,11 @@
 
 // export default QuickOverviewMobile;
 
-import Card from "./Card";
 import { Modules } from "@/public/constants";
 
 import React from "react";
 import ScrollSlider from "./ScrollSlider";
+import Card from "./Card";
 
 const QuickOverviewMobile = () => {
   const renderCard = (module) => {
@@ -81,6 +81,17 @@ const QuickOverviewMobile = () => {
       />
     );
   };
+
+  // const renderCard = (module) => {
+  //   return (
+  //     <ModuleCard
+  //       title={module.title}
+  //       img={module.img}
+  //       htext={module.htext}
+  //       stext={module.desc}
+  //     />
+  //   );
+  // };
 
   return <ScrollSlider modules={Modules} renderComponent={renderCard} />;
 };

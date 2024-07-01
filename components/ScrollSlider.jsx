@@ -22,7 +22,7 @@ const ScrollSlider = ({ modules, renderComponent }) => {
     <>
       <motion.div
         whileTap={{ scale: 1.5 }}
-        className="absolute top-1/2 left-8 text-2xl font-bold cursor-pointer"
+        className="absolute top-1/4 left-8 text-2xl font-bold cursor-pointer"
         onClick={() => {
           handleHorizantalScroll(ref.current, 100, 400, -400);
         }}
@@ -45,7 +45,7 @@ const ScrollSlider = ({ modules, renderComponent }) => {
       </div>
       <motion.div
         whileTap={{ scale: 1.5 }}
-        className="absolute top-1/2 left-[90%] text-2xl font-bold cursor-pointer"
+        className="absolute top-1/4 left-[90%] text-2xl font-bold cursor-pointer"
         onClick={() => {
           handleHorizantalScroll(ref.current, 100, 400, 400);
         }}

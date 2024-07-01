@@ -26,7 +26,7 @@ const QuickOverview = () => {
         })}
       </div>
 
-      <div className="flex flex-row justify-around items-center py-6 bg-primaryContainer">
+      <div className="flex flex-row justify-around items-center py-6 bg-primaryContainer border-b-2 border-outline">
         <Card
           title={Modules[curID - 1].title}
           img={Modules[curID - 1].img}

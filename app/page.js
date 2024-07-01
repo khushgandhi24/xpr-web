@@ -8,7 +8,7 @@ import { ArrowIcon, ArrowDown } from "@/public/svgs";
 
 const Home = () => {
   return (
-    <div className="h-[70vh] overflow-y-scroll no-scrollbar lg:h-full">
+    <div className="no-scrollbar lg:h-full">
       <section className="lg:flex lg:items-center lg:justify-between lg:px-12 lg:py-4 bg-gradient-to-b from-surface to-primaryContainer">
         <Image
           src="/hero2.svg"
@@ -45,9 +45,8 @@ const Home = () => {
               aria-controls="panel1-content"
               id="panel1-header"
             >
-              Read more...
             </AccordionSummary>
-            <AccordionDetails className="font-semibold text-darkGrey">
+            <AccordionDetails className="font-semibold text-md text-darkGrey">
               Step into the future of logistics management with the
               industry&apos;s premier choice, trusted by countless companies
               worldwide.

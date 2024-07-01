@@ -49,9 +49,9 @@ const Navbar = () => {
           } text-md`}
           href="/module"
         >
-          Modules
+          Features
         </Link>
-        <Link
+        {/* <Link
           className={`${
             pathname === "/about"
               ? "underline decoration-2 decoration-error underline-offset-2 font-semibold"
@@ -60,7 +60,7 @@ const Navbar = () => {
           href="/about"
         >
           About
-        </Link>
+        </Link> */}
         <Link
           className={`${
             pathname === "/news"
@@ -132,7 +132,7 @@ const Navbar = () => {
             >
               Modules
             </Link>
-            <Link
+            {/* <Link
               href="/about"
               onClick={handleClick}
               className={`${
@@ -142,7 +142,7 @@ const Navbar = () => {
               }`}
             >
               About
-            </Link>
+            </Link> */}
             <Link
               href="/news"
               onClick={handleClick}

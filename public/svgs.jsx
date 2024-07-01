@@ -145,4 +145,28 @@ const Customize = () => (
   </svg>
 );
 
-export { FlameIcon, ArrowIcon, ArrowDown, Verified, Streamline, Customize };
+const Cloud = () => (
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#001849" stroke="#001849  " className="w-6 h-6">
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round">
+      </g>
+    <g id="SVGRepo_iconCarrier"> 
+      <g> 
+        <path d="M11.5 5c2.336 0 4.304 1.825 4.48 4.154l.142 1.86 1.867-.012h.092C19.698 11.043 21 12.37 21 14c0 .748-.28 1.452-.783 2H3.28c-.156-.256-.28-.59-.28-1 0-1.074.85-1.953 1.915-1.998.06.007.118.012.178.015l2.66.124-.622-2.587C7.044 10.186 7 9.843 7 9.5 7 7.02 9.02 5 11.5 5m0-2C7.91 3 5 5.91 5 9.5c0 .524.07 1.03.186 1.52C5.123 11.015 5.064 11 5 11c-2.21 0-4 1.79-4 4 0 1.202.54 2.267 1.38 3h18.593C22.196 17.09 23 15.643 23 14c0-2.76-2.24-5-5-5l-.025.002C17.72 5.646 14.922 3 11.5 3z">
+        </path> 
+      </g> 
+    </g>
+  </svg>
+);
+
+const CustomerService = () => (
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#001849" stroke="#001849" className="w-6 h-6">
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+    <g id="SVGRepo_iconCarrier"> 
+      <g>  
+        <path d="M22 17.002a6.002 6.002 0 0 1-4.713 5.86l-.638-1.914A4.003 4.003 0 0 0 19.465 19H17a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h2.938a8.001 8.001 0 0 0-15.876 0H7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5C2 6.477 6.477 2 12 2s10 4.477 10 10V17.002zM20 17v-4h-3v4h3zM4 13v4h3v-4H4z"></path>
+      </g> 
+    </g>
+  </svg>
+);
+
+export { FlameIcon, ArrowIcon, ArrowDown, Verified, Streamline, Customize, Cloud, CustomerService };
