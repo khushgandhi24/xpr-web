@@ -4,7 +4,7 @@ import React from 'react'
 const Explainer = () => {
   return (
     <div className='md:py-12 px-8 pb-6'>
-        <h1 className='text-3xl font-lato text-center font-semibold pb-4'>Xpresion's evolution</h1>
+        <h1 className='text-3xl font-lato text-center font-semibold pb-4'>Xpresion&apos;s evolution</h1>
         <hr className='w-auto h-1 mb-4 bg-primary'/>
         <div className='lg:flex lg:items-center lg:justify-between'>
         <Image
@@ -29,7 +29,7 @@ const Explainer = () => {
           </p>
           <h2 className='text-2xl font-sans font-medium py-3'>Building future-ready solutions</h2>
           <p className='text-md'>
-              Join us as we embark on the next chapter of innovation, dedicated to empowering businesses with robust solutions tailored to meet tomorrow's challenges.
+              Join us as we embark on the next chapter of innovation, dedicated to empowering businesses with robust solutions tailored to meet tomorrow&apos;s challenges.
           </p>
         </div>
         </div>
