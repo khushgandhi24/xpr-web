@@ -90,7 +90,7 @@ function News() {
             </div>
             <motion.div
               whileTap={{ scale: 1.5 }}
-              className="absolute top-[50%] left-[93%] text-2xl font-bold cursor-pointer"
+              className="absolute top-[50%] left-[94%] text-2xl font-bold cursor-pointer"
               onClick={() => {
                 handleHorizantalScroll(ref.current, 100, 400, 400);
               }}

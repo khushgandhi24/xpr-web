@@ -18,12 +18,12 @@ const Explainer = () => {
           <h2 className='text-2xl font-sans font-medium pb-3'>Pioneering Innovation</h2>
           <p className='text-md pb-2'>
               With over three decades of industry expertise, Busisoft proudly presents our journey of innovation and adaptation. 
-              Since its inception in 1995, Xpresion, our flagship product, has evolved from its early days in DOS to advanced Windows .Net, Online, and Cloud platforms. 
-              Now, we are excited to introduce Xpresion Next, a cutting-edge application designed to enhance the efficiency of customer operations with its sophisticated technological framework.
+              Since its inception in <span className='font-bold'>1995</span>, Xpresion, our flagship product, has evolved from its early days in <span className='font-bold'>DOS to advanced Windows .Net, Online, and Cloud platforms </span>. 
+              Now, we are excited to introduce <span className='font-bold'>Xpresion Next</span>, a cutting-edge application designed to enhance the efficiency of customer operations with its sophisticated technological framework.
           </p>
           <h2 className='text-2xl font-sans font-medium py-3'>Client-focused</h2>
           <p className='text-md pb-2'>
-              Adaptability and customer-centricity lie at the heart of Xpresion.
+          <span className='font-bold'>Adaptability and customer-centricity</span> lie at the heart of Xpresion.
               We continuously leverage our deep-rooted techno-functional expertise to improve operational efficiency and convenience for our clients.
               Our commitment to understanding and meeting market needs drives us to innovate relentlessly, ensuring that Xpresion stays at the forefront of industry standards.
           </p>

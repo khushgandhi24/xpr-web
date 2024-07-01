@@ -37,14 +37,14 @@ const Features = () => {
           </h1>
           <motion.h1
             style={{ opacity: opacity }}
-            className="text-2xl text-end font-semibold italic text-onPrimaryContainer lg:text-2xl font-sans"
+            className="hidden md:block text-2xl text-end font-semibold italic text-onPrimaryContainer lg:text-2xl font-sans"
           >
             We provide efficient, reliable logistics management
             <br /> with expert-driven solutions
           </motion.h1>
         </div>
 
-        <div className="hidden lg:grid lg:grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
+        <div className="hidden lg:grid md:grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 xl:grid-cols-2">
           {Highlights.map((highlight) => {
             return (
               <FeatureCard
@@ -58,7 +58,7 @@ const Features = () => {
         </div>
         <div className="mt-8 lg:hidden">
           <>
-            {/* <motion.div
+            <motion.div
               whileTap={{ scale: 1.5 }}
               className="absolute top-[85%] left-2 text-2xl font-bold cursor-pointer"
               onClick={() => {
@@ -66,7 +66,7 @@ const Features = () => {
               }}
             >
               &lt;
-            </motion.div> */}
+            </motion.div>
             <div
               className="flex flex-row flex-nowrap overflow-x-scroll no-scrollbar scroll-smooth snap-x snap-mandatory"
               ref={ref}
@@ -84,15 +84,15 @@ const Features = () => {
                 </div>
               ))}
             </div>
-            {/* <motion.div
+            <motion.div
               whileTap={{ scale: 1.5 }}
-              className="absolute top-[85%] left-[93%] text-2xl font-bold cursor-pointer"
+              className="absolute top-[85%] left-[95%] text-2xl font-bold cursor-pointer"
               onClick={() => {
                 handleHorizantalScroll(ref.current, 100, 340, 340);
               }}
             >
               &gt;
-            </motion.div> */}
+            </motion.div>
           </>
         </div>
       </div>

@@ -8,13 +8,13 @@ import { Modules } from "@/public/constants";
 function Module() {
   return (
     <section className="pt-4 lg:pt-6 lg:h-full">
-      <h1 className="text-3xl text-center font-semibold italic font-lato lg:not-italic text-onSurface pb-4 ">
-        <span className="lg:hidden">
+      <h1 className="text-3xl text-center font-semibold italic font-lato lg:not-italic text-onSurface pb-4 lg:pb-0 ">
+        {/* <span className="lg:hidden">
           <ParallaxText baseVelocity={5}>
             Explore Xpresion&apos;s features
           </ParallaxText>
-        </span>
-        <span className="hidden lg:block">Explore Xpresion&apos;s features</span>
+        </span> */}
+        <span className="">Explore Xpresion&apos;s features</span>
       </h1>
       {/* <div className="hidden lg:block">
         <QuickOverview />

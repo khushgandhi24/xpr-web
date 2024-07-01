@@ -45,6 +45,7 @@ const Home = () => {
               aria-controls="panel1-content"
               id="panel1-header"
             >
+              Read more...
             </AccordionSummary>
             <AccordionDetails className="font-semibold text-md text-darkGrey">
               Step into the future of logistics management with the
@@ -59,6 +60,7 @@ const Home = () => {
               bgColor={"bg-surface"}
               textColor={"text-error"}
               className={"hover:bg-error hover:text-surface"}
+              link={"/module"}
             />
             <Button
               title={"Book a demo"}

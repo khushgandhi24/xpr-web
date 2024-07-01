@@ -130,7 +130,7 @@ const Navbar = () => {
                   : ""
               }`}
             >
-              Modules
+              Features
             </Link>
             {/* <Link
               href="/about"
@@ -154,15 +154,25 @@ const Navbar = () => {
             >
               News
             </Link>
-            <a href="https://www.xpresion.in/contact.html">Contact</a>
+            {/* <a href="https://www.xpresion.in/contact.html" target="_blank">Contact</a> */}
+            <Button
+              title={"Contact us"}
+              bgColor={"bg-primary"}
+              textColor={"text-onPrimary"}
+              borderColor={"border-primary"}
+              link={"https://www.xpresion.in/contact.html"}
+              className={
+                "hover:bg-gradient-to-b from-surface to-primaryContainer hover:text-primary"
+              }
+            />
           </nav>
-          <Button
+          {/* <Button
             title={"Book A Demo"}
             bgColor={"bg-surface"}
             textColor={"text-onSurface"}
             borderColor={"border-onPrimaryContainer"}
             className={"mt-6"}
-          />
+          /> */}
         </motion.div>
       ) : null}
     </nav>
