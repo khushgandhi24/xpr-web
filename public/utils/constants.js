@@ -39,10 +39,17 @@ export const Modules = [
   {
     img: "images/EDI.png",
     title: "Indian Customs EDI integration",
-    desc: "This software facilitates the day to day operations, billing and Track-n-Trace functionality for a courier and cargo and/or logistics company",
+    desc: "Xpresion integrates seamlessly with the Indian Customs Department's EDI system, saving you valuable time and effort. This integration streamlines the customs process, reducing manual entry and minimizing errors thus optimizing overall efficiency and ensuring smooth operation.",
     htext: "Customs EDI Integration",
     id: 6,
   },
+  {
+    img: "images/mobile.gif",
+    title: "Mobile App",
+    desc: "Xpresion is also available as a mobile app on the Google Play Store, with an iOS version coming soon. It offers unparalleled ease of access to Xpresion anytime, anywhere. The mobile-friendly UI is designed for simplicity and speed, helping to reduce turnaround times and increase efficiency.",
+    htext: "Experience logistics management on the go",
+    id: 7,
+  }
 ];
 
 export const Highlights = [

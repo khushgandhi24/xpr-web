@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const hideScrollbar = require("./public/hideScrollbar");
+const hideScrollbar = require("./public/utils/hideScrollbar");
 
 module.exports = {
   content: [
