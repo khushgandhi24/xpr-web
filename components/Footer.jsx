@@ -12,7 +12,7 @@ const Footer = () => {
         </h3>
         <a href="https://busisoft.in" target="_blank">
           <Image
-            src="/Busisoft.png"
+            src="./Busisoft.png"
             width={160}
             height={120}
             alt="Busisoft Logo"
