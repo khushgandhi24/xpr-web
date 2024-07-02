@@ -21,7 +21,7 @@ const Navbar = () => {
       <Link href="/">
         <Image
           className="cursor-pointer"
-          src="./Xpr_Red.png"
+          src="/logos/Xpr_Red.png"
           alt="Xpresion Logo"
           width={160}
           height={80}
