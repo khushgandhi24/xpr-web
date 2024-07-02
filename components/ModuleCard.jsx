@@ -17,7 +17,7 @@ const ModuleCard = ({img, title, stext, htext}) => {
             <Image src={img} width={200} height={200} alt={title} unoptimized={true}/>
         </div>
         <h2 className=" text-lg text-center mx-auto font-semibold font-lato pb-2">{title}</h2>
-        <p className={`font-slab text-primary hover:text-onSurface text-center ${!visible ? 'block': 'hidden'} cursor-pointer`} onClick={() => toggleView()}>{htext}</p>
+        <p className={`font-slab text-primary font-bold hover:text-onSurface text-center ${!visible ? 'block': 'hidden'} cursor-pointer`} onClick={() => toggleView()}>{htext}</p>
         <p className={`font-sans text-center ${visible ? 'block' : 'hidden'}`}>{stext}</p>
         <button></button>
     </div>
