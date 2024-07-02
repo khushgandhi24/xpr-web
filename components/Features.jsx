@@ -1,7 +1,7 @@
 "use client";
 
 import FeatureCard from "./FeatureCard";
-import { Highlights } from "@/public/constants";
+import { Highlights } from "@/public/utils/constants";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 

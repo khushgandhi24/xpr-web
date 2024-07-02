@@ -14,14 +14,14 @@ const Comments = () => {
       isIntrinsicHeight={true}
     >
       <Slider>
-        <Slide index={0} className="text-2xl text-center">
-          I am the first Slide.
+        <Slide index={0} className="text-2xl italic text-center">
+          To keep a customer demands as much skill as to win one
         </Slide>
-        <Slide index={1} className="text-2xl text-center">
-          I am the second Slide.
+        <Slide index={1} className="text-2xl italic text-center">
+          Quality is remembered long after price is forgotten.
         </Slide>
-        <Slide index={2} className="text-2xl text-center">
-          I am the third Slide.
+        <Slide index={2} className="text-2xl italic text-center">
+          There are no traffic jams along the extra mile.
         </Slide>
       </Slider>
     </CarouselProvider>

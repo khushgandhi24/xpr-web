@@ -3,7 +3,7 @@
 import Article from "@/components/Article";
 import Comments from "@/components/Comments";
 import ParallaxText from "@/components/ParallaxText";
-import { Articles } from "@/public/constants";
+import { Articles } from "@/public/utils/constants";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
@@ -40,8 +40,10 @@ function News() {
             express industries
           </p>
         </div>
-
-        <div className="hidden lg:grid lg:grid-cols-1 gap-8 mt-8 lg:mt-12 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
+        <div className="h-[325px] mb-32">
+          <h1 className="text-4xl text-center pt-48 italic font-semibold">Coming Soon...</h1>
+        </div>
+        {/* <div className="hidden lg:grid lg:grid-cols-1 gap-8 mt-8 lg:mt-12 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
           {Articles.map((article) => {
             return (
               <Article
@@ -98,7 +100,7 @@ function News() {
               &gt;
             </motion.div>
           </>
-        </div>
+        </div> */}
       </div>
     </section>
   );

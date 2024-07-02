@@ -2,42 +2,42 @@ import { Verified, Streamline, CustomerService, Cloud } from "./svgs";
 
 export const Modules = [
   {
-    img: "/Ops1.png",
+    img: "images/Ops1.png",
     title: "Operational Efficiency",
     desc: "Streamline your logistics operations effortlessly with our all-in-one software solution. Manage daily tasks, streamline billing, and empower real-time Track-n-Trace capabilities for your courier and cargo operations.",
     htext: "Streamline your logistics operations effortlessly",
     id: 1,
   },
   {
-    img: "/Ecomm.png",
+    img: "images/Ecomm.png",
     title: "E-commerce",
     desc: "Empower your ecommerce logistics seamlessly with our robust integration solution. From booking to last mile delivery, ensure every step is tracked and managed efficiently, enhancing customer satisfaction and operational excellence.",
     htext: "Empower your ecommerce logistics seamlessly",
     id: 2,
   },
   {
-    img: "/Warehouse.gif",
+    img: "images/Warehouse.gif",
     title: "Warehouse",
     desc: "Optimize your warehousing logistics with our integrated software solution, providing real-time management of inventory, dispatches, and deliveries across all warehouses. Experience enhanced visibility and operational control to meet the demands of modern logistics seamlessly",
     htext: "Optimize your warehousing logistics",
     id: 3,
   },
   {
-    img: "/Tally2.gif",
+    img: "images/Tally2.gif",
     title: "Tally Bridge",
     desc: "Unlock enhanced logistics management with our software's integration of Tally ERP and Xpresion. Streamline operations effortlessly by synchronizing data between systems, ensuring precision in inventory management, transactions, and financial insights with this powerful integration",
     htext: "Unlock enhanced logistics management",
     id: 4,
   },
   {
-    img: "/api2.gif",
+    img: "images/api2.gif",
     title: "3rd party API integration",
     desc: "Transform your logistics with our software's integrated solution for managing external service providers, including shipping and delivery logistics. Streamline operations and boost transparency throughout your supply chain, ensuring seamless coordination and enhanced customer satisfaction.",
     htext: "Transform your logistics",
     id: 5,
   },
   {
-    img: "/EDI.png",
+    img: "images/EDI.png",
     title: "Indian Customs EDI integration",
     desc: "This software facilitates the day to day operations, billing and Track-n-Trace functionality for a courier and cargo and/or logistics company",
     htext: "Customs EDI Integration",

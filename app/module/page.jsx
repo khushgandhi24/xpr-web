@@ -3,18 +3,18 @@ import QuickOverviewMobile from "@/components/QuickOverviewMobile";
 import ParallaxText from "@/components/ParallaxText";
 import Explainer from "@/components/Explainer";
 import ModuleCard from "@/components/ModuleCard";
-import { Modules } from "@/public/constants";
+import { Modules } from "@/public/utils/constants";
 
 function Module() {
   return (
     <section className="pt-4 lg:pt-6 lg:h-full">
-      <h1 className="text-3xl text-center font-semibold italic font-lato lg:not-italic text-onSurface pb-4 lg:pb-0 ">
+      <h1 className="text-3xl text-center font-semibold italic font-lato lg:not-italic text-onSurface md:pt-4 pb-4 lg:pb-0 ">
         {/* <span className="lg:hidden">
           <ParallaxText baseVelocity={5}>
             Explore Xpresion&apos;s features
           </ParallaxText>
         </span> */}
-        <span className="">Explore Xpresion&apos;s features</span>
+        <span>Explore Xpresion&apos;s features</span>
       </h1>
       {/* <div className="hidden lg:block">
         <QuickOverview />

@@ -64,7 +64,7 @@
 
 // export default QuickOverviewMobile;
 
-import { Modules } from "@/public/constants";
+import { Modules } from "@/public/utils/constants";
 
 import React from "react";
 import ScrollSlider from "./ScrollSlider";

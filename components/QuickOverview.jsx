@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Card from "./Card";
-import { Modules } from "@/public/constants";
+import { Modules } from "@/public/utils/constants";
 
 const QuickOverview = () => {
   const [curID, setCurID] = useState(1);

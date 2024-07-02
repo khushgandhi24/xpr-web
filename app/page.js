@@ -4,14 +4,14 @@ import Image from "next/image";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
-import { ArrowIcon, ArrowDown } from "@/public/svgs";
+import { ArrowIcon, ArrowDown } from "@/public/utils/svgs";
 
 const Home = () => {
   return (
     <div className="no-scrollbar lg:h-full">
       <section className="lg:flex lg:items-center lg:justify-between lg:px-12 lg:py-4 bg-gradient-to-b from-surface to-primaryContainer">
         <Image
-          src="/hero2.svg"
+          src="images/hero2.svg"
           alt="Xpresion Hero Image"
           priority={true}
           //sizes="(max-width: 560px) 100vw, 100vw"
@@ -63,7 +63,7 @@ const Home = () => {
               link={"/module"}
             />
             <Button
-              title={"Book a demo"}
+              title={"Coming Soon"}
               borderColor={"border-primary"}
               bgColor={"bg-surface"}
               textColor={"text-primary"}
