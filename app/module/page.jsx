@@ -7,7 +7,7 @@ import { Modules } from "@/public/utils/constants";
 
 function Module() {
   return (
-    <section className="pt-4 lg:pt-6 lg:h-full">
+    <section className="pt-4 lg:pt-6 lg:h-full bg-surface">
       <h1 className="text-3xl text-center font-semibold italic font-lato lg:not-italic text-onSurface md:pt-4 pb-4 lg:pb-0 ">
         {/* <span className="lg:hidden">
           <ParallaxText baseVelocity={5}>

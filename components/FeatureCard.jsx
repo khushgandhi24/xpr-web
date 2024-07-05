@@ -16,13 +16,14 @@ const FeatureCard = ({ title, desc, icon }) => {
   // };
 
   return (
-    <div className="p-8 space-y-2 w-[85vw] h-[235px] ml-2 mr-2 lg:w-auto lg:mx-0 lg:space-y-3 border-2 border-outline rounded-xl">
+    <motion.div initial={{scale: 0, opacity: 0}} whileInView={{scale: 1, opacity:1}} viewport={{once: true}} transition={{duration: 0.75, type: "keyframes"}} 
+      className="p-8 space-y-2 w-[85vw] h-[235px] ml-2 mr-2 lg:w-auto lg:mx-0 lg:space-y-3 border-2 bg-surface border-black rounded-xl">
       <span className="inline-block text-error/90">{icon}</span>
 
-      <h1 className="text-xl font-semibold text-gray-800 font-lato">{title}</h1>
+      <h1 className="text-xl font-semibold text-onSurface font-lato">{title}</h1>
 
       <p
-        className={`text-gray-600 inline-block font-medium font-sans`}
+        className={`text-gray inline-block font-medium font-sans`}
       >
         {desc}
       </p>
@@ -35,7 +36,7 @@ const FeatureCard = ({ title, desc, icon }) => {
       >
         <ArrowDown />
       </motion.a> */}
-    </div>
+    </motion.div>
   );
 };
 

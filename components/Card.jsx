@@ -5,7 +5,7 @@ import Image from "next/image";
 const Card = ({ img, title, mId, func }) => {
   return (
     <div className="flex flex-col-reverse cursor-pointer">
-      <h2 className="w-[180px] text-lg text-center mx-auto font-lato cursor-pointer">
+      <h2 className="w-[180px] text-xl text-center mx-auto font-lato font-semibold cursor-pointer">
         {title}
       </h2>
       <motion.div

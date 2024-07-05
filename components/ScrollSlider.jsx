@@ -34,13 +34,14 @@ const ScrollSlider = ({ modules, renderComponent }) => {
         ref={ref}
       >
         {modules.map((module) => (
-          <div
+          <motion.div
+            initial={{scale: 0, opacity: 0}} whileInView={{scale: 1, opacity:1}} viewport={{once: true}} transition={{duration: 0.75, type: "keyframes"}}
             key={module.id}
-            className="py-6 px-[5.5rem] bg-surface snap-center snap-always basis-full"
+            className="py-6 px-[5.25rem] bg-surface snap-center snap-always basis-full"
           >
             {renderComponent(module)}
             <p className="pt-8 text-center">{module.desc}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
       <motion.div

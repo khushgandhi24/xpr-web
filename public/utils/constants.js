@@ -4,7 +4,7 @@ export const Modules = [
   {
     img: "images/Ops1.png",
     title: "Operational Efficiency",
-    desc: "Streamline your logistics operations effortlessly with our all-in-one software solution. Manage daily tasks, streamline billing, and empower real-time Track-n-Trace capabilities for your courier and cargo operations.",
+    desc: "Streamline your express courier & logistics operations effortlessly with our all-in-one software solution. Manage daily tasks, streamline billing, and empower real-time Track-n-Trace capabilities for your courier and cargo operations.",
     htext: "Streamline your logistics operations effortlessly",
     id: 1,
   },
@@ -56,7 +56,7 @@ export const Highlights = [
   {
     icon: <Cloud />,
     title: "Cloud-based software",
-    desc: "Our cloud-based software delivers a comprehensive suite of features, evolving alongside the dynamic needs of the logistics sector.",
+    desc: "Our cloud-based software delivers a comprehensive suite of features, evolving along the dynamic needs of the express courier sector.",
     id: 1,
   },
   {
@@ -74,7 +74,7 @@ export const Highlights = [
   {
     icon: <CustomerService />,
     title: "Dedicated customer service",
-    desc: "We live by our philosophy, 'Customer satisfaction is our sole purpose.' Every product and service is designed to ensure complete satisfaction.",
+    desc: "We live by our philosophy, 'Customer satisfaction is our sole purpose.' We strive to provide exemplary service to our clients.",
     id: 4
   }
 ];

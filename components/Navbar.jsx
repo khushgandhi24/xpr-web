@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative z-30 py-8 border-b-4 border-primary px-12 flex items-center justify-between">
+    <nav className=" z-30 py-4 border-b-4 border-primary px-12 fixed w-full bg-surface flex items-center justify-between">
       <Link href="/">
         <Image
           className="cursor-pointer"

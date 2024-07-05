@@ -4,6 +4,7 @@ import FeatureCard from "./FeatureCard";
 import { Highlights } from "@/public/utils/constants";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import Typewriter from 'typewriter-effect';
 
 const Features = () => {
   const { scrollYProgress } = useScroll();
@@ -44,7 +45,7 @@ const Features = () => {
           </motion.h1>
         </div>
 
-        <div className="hidden lg:grid md:grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 xl:grid-cols-2">
+        <motion.div className="hidden lg:grid md:grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 xl:grid-cols-2">
           {Highlights.map((highlight) => {
             return (
               <FeatureCard
@@ -55,18 +56,17 @@ const Features = () => {
               />
             );
           })}
-        </div>
+        </motion.div>
         <div className="mt-8 lg:hidden">
           <>
-            <motion.div
-              whileTap={{ scale: 1.5 }}
+            <div
               className="absolute top-[85%] left-2 text-2xl font-bold cursor-pointer"
               onClick={() => {
                 handleHorizantalScroll(ref.current, 100, 340, -340);
               }}
             >
               &lt;
-            </motion.div>
+            </div>
             <div
               className="flex flex-row flex-nowrap overflow-x-scroll no-scrollbar scroll-smooth snap-x snap-mandatory"
               ref={ref}
@@ -84,15 +84,14 @@ const Features = () => {
                 </div>
               ))}
             </div>
-            <motion.div
-              whileTap={{ scale: 1.5 }}
+            <div
               className="absolute top-[85%] left-[95%] text-2xl font-bold cursor-pointer"
               onClick={() => {
                 handleHorizantalScroll(ref.current, 100, 340, 340);
               }}
             >
               &gt;
-            </motion.div>
+            </div>
           </>
         </div>
       </div>
