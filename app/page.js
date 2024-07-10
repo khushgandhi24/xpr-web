@@ -28,11 +28,11 @@ const Home = () => {
         />
         <article className="lg:basis-2/5 px-4">
           <h1 className="text-2xl lg:text-4xl font-semibold text-onPrimaryContainer font-lato text-center lg:text-start leading-snug">
-            Delivering excellence on time,
+            Optimizing your operations with
           </h1>
           <motion.h1 className="text-primary italic text-2xl lg:text-4xl font-semibold font-lato text-center lg:text-start leading-snug" 
             initial={{opacity: 0, x: "100%"}} animate={{opacity: 1, x: "0%"}} transition={{duration: 0.75, delay:0.5, type: "spring"}}>
-            every time.
+            tailored solutions.
           </motion.h1>
           {/* <motion.h3 className="text-lg lg:text-2xl text-onPrimaryContainer font-lato font-semibold my-4 text-center lg:text-start">
             Experience the difference with Xpresion
